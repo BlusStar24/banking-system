@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Đăng nhập</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+
+<body class="bg-light">
+    <div class="container my-5">
+        <h2 class="mb-4 text-center">Đăng nhập hệ thống</h2>
+        <form id="loginForm" class="row g-3 mx-auto" style="max-width: 400px;">
+            <div class="col-12">
+                <label class="form-label">Tên đăng nhập</label>
+                <input type="text" name="username" class="form-control" required />
+            </div>
+            <div class="col-12">
+                <label class="form-label">Mật khẩu</label>
+                <input type="password" name="password" class="form-control" required />
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary w-100">Đăng nhập</button>
+            </div>
+        </form>
+        <div id="userInfo" class="text-center"></div>
+    </div>
+
+    <script>
+        const API_BASE = "http://localhost:5000/api/customers";
+
+        document.getElementById("loginForm").addEventListener("submit", async (e) => {
+            e.preventDefault();
+
+            const formData = new FormData(e.target);
+            const loginData = {
+                username: formData.get("username"),
+                password: formData.get("password")
+            };
+
+            try {
+                const res = await fetch(`${API_BASE}/login`, {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify(loginData),
+                });
+
+                const data = await res.json();
+
+                if (!res.ok) {
+                    alert(data.message || "Đăng nhập thất bại");
+                    return;
+                }
+
+                // ✅ Lưu token & username vào localStorage
+                localStorage.setItem("token", data.accessToken);
+                localStorage.setItem("username", data.username);
+
+                // ✅ Hiện thông báo
+                alert("Đăng nhập thành công!");
+
+                // ✅ Gọi API lấy thông tin người dùng
+                const profileRes = await fetch(`${API_BASE}/user-profile`, {
+                    method: "GET",
+                    headers: {
+                        "Authorization": `Bearer ${localStorage.getItem("token")}`
+                    }
+                });
+
+                const profile = await profileRes.json();
+
+                if (!profileRes.ok) {
+                    alert("Lỗi khi lấy thông tin người dùng");
+                    return;
+                }
+
+                const infoDiv = document.getElementById("userInfo");
+                const balance = Number(profile.account?.balance || 0);
+
+                infoDiv.innerHTML = `
+  <div class="alert alert-success mt-4">
+    <strong>Xin chào, ${profile.customer?.name || profile.username}!</strong><br/>
+    Mã khách hàng: ${profile.customer?.customerId || "(Không có)"}<br/>
+    Email: ${profile.customer?.email || "(Không có)"}<br/>
+    ID Tài khoản: ${profile.account?.accountId || "(Không có)"}<br/>
+    Số tài khoản: ${profile.account?.accountNumber || "(Không có)"}<br/>
+    Số dư: ${balance.toLocaleString("vi-VN")} VNĐ
+  </div>
+`;
+
+            } catch (err) {
+                alert("Lỗi kết nối: " + err.message);
+            }
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,197 @@
+2025-07-30 01:43:33.045 +00:00 [INF] Logger initialized
+2025-07-30 01:43:33.083 +00:00 [INF] Starting Message Service...
+2025-07-30 01:43:33.084 +00:00 [INF] Starting MessageConsumer...
+2025-07-30 01:43:33.254 +00:00 [INF] Connected to RabbitMQ successfully
+2025-07-30 01:43:33.275 +00:00 [INF] Message service is running...
+2025-07-30 01:56:17.343 +00:00 [INF] [Consumer] Received: Email=cuongvnabc@gmail.com, Phone=0909999999, Method=email, OTP=726546, Subject=
+2025-07-30 01:56:21.836 +00:00 [INF] Đã gửi email đến: cuongvnabc@gmail.com
+2025-07-30 02:03:04.781 +00:00 [INF] Logger initialized
+2025-07-30 02:03:04.813 +00:00 [INF] Starting Message Service...
+2025-07-30 02:03:05.074 +00:00 [INF] Starting MessageConsumer...
+2025-07-30 02:03:05.179 +00:00 [INF] Connected to RabbitMQ successfully
+2025-07-30 02:03:05.201 +00:00 [INF] Message service is running...
+2025-07-30 02:03:11.510 +00:00 [INF] [Consumer] Processing: {"Phone":"0909999999","Email":"cuongvnabc@gmail.com","Method":"email","Otp":"308900","Subject":"M\u00E3 OTP x\u00E1c th\u1EF1c \u0111\u0103ng k\u00FD","Body":"M\u00E3 OTP c\u1EE7a b\u1EA1n l\u00E0: 308900 (h\u1EBFt h\u1EA1n sau 5 ph\u00FAt)."}
+2025-07-30 02:03:15.399 +00:00 [INF] Đã gửi email đến: cuongvnabc@gmail.com
+2025-07-30 02:11:08.930 +00:00 [INF] Logger initialized
+2025-07-30 02:11:09.015 +00:00 [INF] Starting Message Service...
+2025-07-30 02:11:09.226 +00:00 [INF] Starting MessageConsumer...
+2025-07-30 02:11:09.337 +00:00 [INF] Connected to RabbitMQ successfully
+2025-07-30 02:11:09.396 +00:00 [INF] Message service is running...
+2025-07-30 02:11:39.972 +00:00 [INF] [Consumer] Processing: {"Phone":"0706608882","Email":"cuongvnabc@gmail.com","Method":"email","Otp":"663941","Subject":"M\u00E3 OTP x\u00E1c th\u1EF1c \u0111\u0103ng k\u00FD","Body":"M\u00E3 OTP c\u1EE7a b\u1EA1n l\u00E0: 663941 (h\u1EBFt h\u1EA1n sau 5 ph\u00FAt)."}
+2025-07-30 02:11:41.138 +00:00 [INF] [Consumer] Processing: {"Phone":"0706608882","Email":"cuongvnabc@gmail.com","Method":"email","Otp":"540167","Subject":"M\u00E3 OTP x\u00E1c th\u1EF1c \u0111\u0103ng k\u00FD","Body":"M\u00E3 OTP c\u1EE7a b\u1EA1n l\u00E0: 540167 (h\u1EBFt h\u1EA1n sau 5 ph\u00FAt)."}
+2025-07-30 02:11:43.374 +00:00 [INF] Đã gửi email đến: cuongvnabc@gmail.com
+2025-07-30 02:11:44.620 +00:00 [INF] Đã gửi email đến: cuongvnabc@gmail.com
+2025-07-30 02:32:47.096 +00:00 [INF] [Consumer] Processing: {"Phone":"0706608882","Email":"cuongvnabc@gmail.com","Method":"email","Otp":"125024","Subject":"M\u00E3 OTP x\u00E1c th\u1EF1c \u0111\u0103ng k\u00FD","Body":"M\u00E3 OTP c\u1EE7a b\u1EA1n l\u00E0: 125024 (h\u1EBFt h\u1EA1n sau 5 ph\u00FAt)."}
+2025-07-30 02:32:47.164 +00:00 [INF] [Consumer] Processing: {"Phone":"0706608882","Email":"cuongvnabc@gmail.com","Method":"email","Otp":"781556","Subject":"M\u00E3 OTP x\u00E1c th\u1EF1c \u0111\u0103ng k\u00FD","Body":"M\u00E3 OTP c\u1EE7a b\u1EA1n l\u00E0: 781556 (h\u1EBFt h\u1EA1n sau 5 ph\u00FAt)."}
+2025-07-30 02:32:51.136 +00:00 [INF] Đã gửi email đến: cuongvnabc@gmail.com
+2025-07-30 02:32:51.715 +00:00 [INF] Đã gửi email đến: cuongvnabc@gmail.com
+2025-07-30 02:38:37.233 +00:00 [INF] [Consumer] Processing: {"Phone":"0706608882","Email":"cuongvnabc@gmail.com","Method":"email","Otp":"480039","Subject":"M\u00E3 OTP x\u00E1c th\u1EF1c \u0111\u0103ng k\u00FD","Body":"M\u00E3 OTP c\u1EE7a b\u1EA1n l\u00E0: 480039 (h\u1EBFt h\u1EA1n sau 5 ph\u00FAt)."}
+2025-07-30 02:38:37.289 +00:00 [INF] [Consumer] Processing: {"Phone":"0706608882","Email":"cuongvnabc@gmail.com","Method":"email","Otp":"788271","Subject":"M\u00E3 OTP x\u00E1c th\u1EF1c \u0111\u0103ng k\u00FD","Body":"M\u00E3 OTP c\u1EE7a b\u1EA1n l\u00E0: 788271 (h\u1EBFt h\u1EA1n sau 5 ph\u00FAt)."}
+2025-07-30 02:38:41.589 +00:00 [INF] Đã gửi email đến: cuongvnabc@gmail.com
+2025-07-30 02:38:41.590 +00:00 [INF] Đã gửi email đến: cuongvnabc@gmail.com
+2025-07-30 03:09:47.426 +00:00 [INF] [Consumer] Processing: {"Phone":"0706608882","Email":"cuongvnabc@gmail.com","Method":"email","Otp":"383799","Subject":"M\u00E3 OTP x\u00E1c th\u1EF1c \u0111\u0103ng k\u00FD","Body":"M\u00E3 OTP c\u1EE7a b\u1EA1n l\u00E0: 383799 (h\u1EBFt h\u1EA1n sau 5 ph\u00FAt)."}
+2025-07-30 03:09:47.532 +00:00 [INF] [Consumer] Processing: {"Phone":"0706608882","Email":"cuongvnabc@gmail.com","Method":"email","Otp":"539940","Subject":"M\u00E3 OTP x\u00E1c th\u1EF1c \u0111\u0103ng k\u00FD","Body":"M\u00E3 OTP c\u1EE7a b\u1EA1n l\u00E0: 539940 (h\u1EBFt h\u1EA1n sau 5 ph\u00FAt)."}
+2025-07-30 03:09:52.645 +00:00 [INF] Đã gửi email đến: cuongvnabc@gmail.com
+2025-07-30 03:09:52.664 +00:00 [INF] Đã gửi email đến: cuongvnabc@gmail.com
+2025-07-30 03:11:09.669 +00:00 [INF] Logger initialized
+2025-07-30 03:11:09.754 +00:00 [INF] Starting Message Service...
+2025-07-30 03:11:09.976 +00:00 [INF] Starting MessageConsumer...
+2025-07-30 03:11:10.146 +00:00 [INF] Connected to RabbitMQ successfully
+2025-07-30 03:11:10.152 +00:00 [INF] Message service is running...
+2025-07-30 03:11:15.967 +00:00 [INF] [Consumer] Processing: {"Phone":"0706608882","Email":"cuongvnabc@gmail.com","Method":"email","Otp":"305965","Subject":"M\u00E3 OTP x\u00E1c th\u1EF1c \u0111\u0103ng k\u00FD","Body":"M\u00E3 OTP c\u1EE7a b\u1EA1n l\u00E0: 305965 (h\u1EBFt h\u1EA1n sau 5 ph\u00FAt)."}
+2025-07-30 03:11:15.976 +00:00 [INF] [Consumer] Processing: {"Phone":"0706608882","Email":"cuongvnabc@gmail.com","Method":"email","Otp":"620510","Subject":"M\u00E3 OTP x\u00E1c th\u1EF1c \u0111\u0103ng k\u00FD","Body":"M\u00E3 OTP c\u1EE7a b\u1EA1n l\u00E0: 620510 (h\u1EBFt h\u1EA1n sau 5 ph\u00FAt)."}
+2025-07-30 03:11:19.598 +00:00 [INF] Đã gửi email đến: cuongvnabc@gmail.com
+2025-07-30 03:11:20.051 +00:00 [INF] Đã gửi email đến: cuongvnabc@gmail.com
+2025-07-30 03:38:39.705 +00:00 [INF] Logger initialized
+2025-07-30 03:38:39.743 +00:00 [INF] Starting Message Service...
+2025-07-30 03:38:39.995 +00:00 [INF] Starting MessageConsumer...
+2025-07-30 03:38:40.093 +00:00 [INF] Connected to RabbitMQ successfully
+2025-07-30 03:38:40.100 +00:00 [INF] Message service is running...
+2025-07-30 03:39:07.588 +00:00 [INF] [Consumer] Processing: {"Phone":"0706608882","Email":"cuongvnabc@gmail.com","Method":"email","Otp":"567791","Subject":"M\u00E3 OTP x\u00E1c th\u1EF1c \u0111\u0103ng k\u00FD","Body":"M\u00E3 OTP c\u1EE7a b\u1EA1n l\u00E0: 567791 (h\u1EBFt h\u1EA1n sau 5 ph\u00FAt)."}
+2025-07-30 03:39:07.599 +00:00 [INF] [Consumer] Processing: {"Phone":"0706608882","Email":"cuongvnabc@gmail.com","Method":"email","Otp":"693645","Subject":"M\u00E3 OTP x\u00E1c th\u1EF1c \u0111\u0103ng k\u00FD","Body":"M\u00E3 OTP c\u1EE7a b\u1EA1n l\u00E0: 693645 (h\u1EBFt h\u1EA1n sau 5 ph\u00FAt)."}
+2025-07-30 03:39:11.779 +00:00 [INF] Đã gửi email đến: cuongvnabc@gmail.com
+2025-07-30 03:39:11.785 +00:00 [INF] Đã gửi email đến: cuongvnabc@gmail.com
+2025-07-30 03:46:44.212 +00:00 [INF] Logger initialized
+2025-07-30 03:46:44.299 +00:00 [INF] Starting Message Service...
+2025-07-30 03:46:44.496 +00:00 [INF] Starting MessageConsumer...
+2025-07-30 03:46:44.595 +00:00 [INF] Connected to RabbitMQ successfully
+2025-07-30 03:46:44.600 +00:00 [INF] Message service is running...
+2025-07-30 03:46:52.385 +00:00 [INF] [Consumer] Processing: {"Phone":"0706608882","Email":"cuongvnabc@gmail.com","Method":"email","Otp":"623977","Subject":"M\u00E3 OTP x\u00E1c th\u1EF1c \u0111\u0103ng k\u00FD","Body":"M\u00E3 OTP c\u1EE7a b\u1EA1n l\u00E0: 623977 (h\u1EBFt h\u1EA1n sau 5 ph\u00FAt)."}
+2025-07-30 03:46:55.518 +00:00 [INF] Đã gửi email đến: cuongvnabc@gmail.com
+2025-07-30 03:48:14.324 +00:00 [INF] [Consumer] Processing: {"Phone":"0706608882","Email":"cuongvnabc@gmail.com","Method":"email","Otp":"292203","Subject":"M\u00E3 OTP x\u00E1c th\u1EF1c \u0111\u0103ng k\u00FD","Body":"M\u00E3 OTP c\u1EE7a b\u1EA1n l\u00E0: 292203 (h\u1EBFt h\u1EA1n sau 5 ph\u00FAt)."}
+2025-07-30 03:48:17.297 +00:00 [INF] Đã gửi email đến: cuongvnabc@gmail.com
+2025-07-30 03:54:03.203 +00:00 [INF] [Consumer] Processing: {"Phone":"0706608882","Email":"cuongvnabc@gmail.com","Method":"email","Otp":"986000","Subject":"M\u00E3 OTP x\u00E1c th\u1EF1c \u0111\u0103ng k\u00FD","Body":"M\u00E3 OTP c\u1EE7a b\u1EA1n l\u00E0: 986000 (h\u1EBFt h\u1EA1n sau 5 ph\u00FAt)."}
+2025-07-30 03:54:06.528 +00:00 [INF] Đã gửi email đến: cuongvnabc@gmail.com
+2025-07-30 03:54:46.739 +00:00 [INF] [Consumer] Processing: {"Phone":"0706608882","Email":"cuongvnabc@gmail.com","Method":"email","Otp":"466045","Subject":"M\u00E3 OTP x\u00E1c th\u1EF1c \u0111\u0103ng k\u00FD","Body":"M\u00E3 OTP c\u1EE7a b\u1EA1n l\u00E0: 466045 (h\u1EBFt h\u1EA1n sau 5 ph\u00FAt)."}
+2025-07-30 03:54:48.776 +00:00 [INF] Đã gửi email đến: cuongvnabc@gmail.com
+2025-07-30 04:24:57.813 +00:00 [INF] Logger initialized
+2025-07-30 04:24:57.892 +00:00 [INF] Starting Message Service...
+2025-07-30 04:24:58.096 +00:00 [INF] Starting MessageConsumer...
+2025-07-30 04:24:58.200 +00:00 [INF] Connected to RabbitMQ successfully
+2025-07-30 04:24:58.206 +00:00 [INF] Message service is running...
+2025-07-30 04:31:11.187 +00:00 [INF] Logger initialized
+2025-07-30 04:31:11.216 +00:00 [INF] Starting Message Service...
+2025-07-30 04:31:11.486 +00:00 [INF] Starting MessageConsumer...
+2025-07-30 04:31:11.589 +00:00 [INF] Connected to RabbitMQ successfully
+2025-07-30 04:31:11.594 +00:00 [INF] Message service is running...
+2025-07-30 06:06:44.798 +00:00 [INF] Logger initialized
+2025-07-30 06:06:44.880 +00:00 [INF] Starting Message Service...
+2025-07-30 06:06:45.088 +00:00 [INF] Starting MessageConsumer...
+2025-07-30 06:06:45.196 +00:00 [INF] Connected to RabbitMQ successfully
+2025-07-30 06:06:45.201 +00:00 [INF] Message service is running...
+2025-07-30 06:24:01.048 +00:00 [INF] Logger initialized
+2025-07-30 06:24:01.127 +00:00 [INF] Starting Message Service...
+2025-07-30 06:24:01.326 +00:00 [INF] Starting MessageConsumer...
+2025-07-30 06:24:01.425 +00:00 [INF] Connected to RabbitMQ successfully
+2025-07-30 06:24:01.430 +00:00 [INF] Message service is running...
+2025-07-30 06:27:34.255 +00:00 [INF] Logger initialized
+2025-07-30 06:27:34.290 +00:00 [INF] Starting Message Service...
+2025-07-30 06:27:34.550 +00:00 [INF] Starting MessageConsumer...
+2025-07-30 06:27:34.655 +00:00 [INF] Connected to RabbitMQ successfully
+2025-07-30 06:27:34.666 +00:00 [INF] Message service is running...
+2025-07-30 06:42:52.903 +00:00 [INF] Logger initialized
+2025-07-30 06:42:52.979 +00:00 [INF] Starting Message Service...
+2025-07-30 06:42:53.178 +00:00 [INF] Starting MessageConsumer...
+2025-07-30 06:42:53.215 +00:00 [INF] Connected to RabbitMQ successfully
+2025-07-30 06:42:53.280 +00:00 [INF] Message service is running...
+2025-07-30 06:49:19.698 +00:00 [INF] Logger initialized
+2025-07-30 06:49:19.796 +00:00 [INF] Starting Message Service...
+2025-07-30 06:49:20.064 +00:00 [INF] Starting MessageConsumer...
+2025-07-30 06:49:20.165 +00:00 [INF] Connected to RabbitMQ successfully
+2025-07-30 06:49:20.171 +00:00 [INF] Message service is running...
+2025-07-30 06:58:29.746 +00:00 [INF] Logger initialized
+2025-07-30 06:58:29.824 +00:00 [INF] Starting Message Service...
+2025-07-30 06:58:30.032 +00:00 [INF] Starting MessageConsumer...
+2025-07-30 06:58:30.137 +00:00 [INF] Connected to RabbitMQ successfully
+2025-07-30 06:58:30.143 +00:00 [INF] Message service is running...
+2025-07-30 07:09:54.185 +00:00 [INF] Logger initialized
+2025-07-30 07:09:54.221 +00:00 [INF] Starting Message Service...
+2025-07-30 07:09:54.471 +00:00 [INF] Starting MessageConsumer...
+2025-07-30 07:09:54.509 +00:00 [INF] Connected to RabbitMQ successfully
+2025-07-30 07:09:54.574 +00:00 [INF] Message service is running...
+2025-07-30 07:13:04.747 +00:00 [INF] Logger initialized
+2025-07-30 07:13:04.826 +00:00 [INF] Starting Message Service...
+2025-07-30 07:13:05.030 +00:00 [INF] Starting MessageConsumer...
+2025-07-30 07:13:05.134 +00:00 [INF] Connected to RabbitMQ successfully
+2025-07-30 07:13:05.145 +00:00 [INF] Message service is running...
+2025-07-30 07:19:11.603 +00:00 [INF] Logger initialized
+2025-07-30 07:19:11.689 +00:00 [INF] Starting Message Service...
+2025-07-30 07:19:11.891 +00:00 [INF] Starting MessageConsumer...
+2025-07-30 07:19:11.993 +00:00 [INF] Connected to RabbitMQ successfully
+2025-07-30 07:19:11.999 +00:00 [INF] Message service is running...
+2025-07-30 07:28:01.660 +00:00 [INF] [Consumer] Processing: {"Phone":"0706608882","Email":"cuongvnabc@gmail.com","Method":"email","Otp":"340264","Subject":"M\u00E3 OTP x\u00E1c th\u1EF1c \u0111\u0103ng k\u00FD","Body":"M\u00E3 OTP c\u1EE7a b\u1EA1n l\u00E0: 340264 (h\u1EBFt h\u1EA1n sau 5 ph\u00FAt)."}
+2025-07-30 07:28:05.209 +00:00 [INF] Đã gửi email đến: cuongvnabc@gmail.com
+2025-07-30 07:34:14.088 +00:00 [INF] [Consumer] Processing: {"Phone":"0706608882","Email":"cuongvnabc@gmail.com","Method":"email","Otp":"857461","Subject":"M\u00E3 OTP x\u00E1c th\u1EF1c \u0111\u0103ng k\u00FD","Body":"M\u00E3 OTP c\u1EE7a b\u1EA1n l\u00E0: 857461 (h\u1EBFt h\u1EA1n sau 5 ph\u00FAt)."}
+2025-07-30 07:34:17.228 +00:00 [INF] Đã gửi email đến: cuongvnabc@gmail.com
+2025-07-30 07:40:55.776 +00:00 [INF] [Consumer] Processing: {"Phone":"0706608882","Email":"cuongvnabc@gmail.com","Method":"email","Otp":"530625","Subject":"M\u00E3 OTP x\u00E1c th\u1EF1c \u0111\u0103ng k\u00FD","Body":"M\u00E3 OTP c\u1EE7a b\u1EA1n l\u00E0: 530625 (h\u1EBFt h\u1EA1n sau 5 ph\u00FAt)."}
+2025-07-30 07:40:59.077 +00:00 [INF] Đã gửi email đến: cuongvnabc@gmail.com
+2025-07-30 07:46:15.387 +00:00 [INF] [Consumer] Processing: {"Method":"email","Email":"cuongvnabc@gmail.com","Subject":"T\u00E0i kho\u1EA3n ng\u00E2n h\u00E0ng \u0111\u00E3 \u0111\u01B0\u1EE3c m\u1EDF th\u00E0nh c\u00F4ng","Body":"Xin ch\u00E0o Nguyen Van A,\n\nT\u00E0i kho\u1EA3n ng\u00E2n h\u00E0ng c\u1EE7a b\u1EA1n \u0111\u00E3 \u0111\u01B0\u1EE3c t\u1EA1o th\u00E0nh c\u00F4ng.\nCIF: CIF71c957\nS\u1ED1 t\u00E0i kho\u1EA3n: 9704418144318","MessageId":"f7027e27-25d0-4ac6-8c47-8b9eeb929c0c"}
+2025-07-30 07:46:18.573 +00:00 [INF] Đã gửi email đến: cuongvnabc@gmail.com
+2025-07-30 07:55:51.464 +00:00 [INF] [Consumer] Processing: {"Phone":"0706608882","Email":"cuongvnabc@gmail.com","Method":"email","Otp":"741071","Subject":"M\u00E3 OTP x\u00E1c th\u1EF1c \u0111\u0103ng k\u00FD","Body":"M\u00E3 OTP c\u1EE7a b\u1EA1n l\u00E0: 741071 (h\u1EBFt h\u1EA1n sau 5 ph\u00FAt)."}
+2025-07-30 07:55:55.193 +00:00 [INF] Đã gửi email đến: cuongvnabc@gmail.com
+2025-07-30 07:57:17.073 +00:00 [INF] [Consumer] Processing: {"Phone":"0706608882","Email":"cuongvnabc@gmail.com","Method":"email","Otp":"426022","Subject":"M\u00E3 OTP x\u00E1c th\u1EF1c \u0111\u0103ng k\u00FD","Body":"M\u00E3 OTP c\u1EE7a b\u1EA1n l\u00E0: 426022 (h\u1EBFt h\u1EA1n sau 5 ph\u00FAt)."}
+2025-07-30 07:57:20.470 +00:00 [INF] Đã gửi email đến: cuongvnabc@gmail.com
+2025-07-30 08:01:41.335 +00:00 [INF] [Consumer] Processing: {"Phone":"0706608882","Email":"cuongvnabc@gmail.com","Method":"email","Otp":"927000","Subject":"M\u00E3 OTP x\u00E1c th\u1EF1c \u0111\u0103ng k\u00FD","Body":"M\u00E3 OTP c\u1EE7a b\u1EA1n l\u00E0: 927000 (h\u1EBFt h\u1EA1n sau 5 ph\u00FAt)."}
+2025-07-30 08:01:44.636 +00:00 [INF] Đã gửi email đến: cuongvnabc@gmail.com
+2025-07-30 08:05:40.790 +00:00 [INF] [Consumer] Processing: {"Phone":"0706608882","Email":"cuongvnabc@gmail.com","Method":"email","Otp":"744757","Subject":"M\u00E3 OTP x\u00E1c th\u1EF1c \u0111\u0103ng k\u00FD","Body":"M\u00E3 OTP c\u1EE7a b\u1EA1n l\u00E0: 744757 (h\u1EBFt h\u1EA1n sau 5 ph\u00FAt)."}
+2025-07-30 08:05:43.833 +00:00 [INF] Đã gửi email đến: cuongvnabc@gmail.com
+2025-07-30 08:06:00.615 +00:00 [INF] [Consumer] Processing: {"Method":"email","Email":"cuongvnabc@gmail.com","Subject":"T\u00E0i kho\u1EA3n ng\u00E2n h\u00E0ng \u0111\u00E3 \u0111\u01B0\u1EE3c m\u1EDF th\u00E0nh c\u00F4ng","Body":"Xin ch\u00E0o Nguyen Van A,\n\nT\u00E0i kho\u1EA3n ng\u00E2n h\u00E0ng c\u1EE7a b\u1EA1n \u0111\u00E3 \u0111\u01B0\u1EE3c t\u1EA1o th\u00E0nh c\u00F4ng.\nCIF: CIF744262\nS\u1ED1 t\u00E0i kho\u1EA3n: 9704261155220","MessageId":"e9bda8a3-27a0-4234-b5a6-a63025ff0145"}
+2025-07-30 08:06:00.660 +00:00 [INF] [Consumer] Processing: {"Method":"email","Email":"cuongvnabc@gmail.com","Subject":"T\u00E0i kho\u1EA3n ng\u00E2n h\u00E0ng \u0111\u00E3 \u0111\u01B0\u1EE3c m\u1EDF th\u00E0nh c\u00F4ng","Body":"Xin ch\u00E0o Nguyen Van A,\n\nT\u00E0i kho\u1EA3n ng\u00E2n h\u00E0ng c\u1EE7a b\u1EA1n \u0111\u00E3 \u0111\u01B0\u1EE3c t\u1EA1o th\u00E0nh c\u00F4ng.\nCIF: CIF744262\nS\u1ED1 t\u00E0i kho\u1EA3n: 9704699515900","MessageId":"2859ba80-1eaf-4e5f-b49d-be363872ba3c"}
+2025-07-30 08:06:00.711 +00:00 [INF] [Consumer] Processing: {"Method":"email","Email":"cuongvnabc@gmail.com","Subject":"T\u00E0i kho\u1EA3n ng\u00E2n h\u00E0ng \u0111\u00E3 \u0111\u01B0\u1EE3c m\u1EDF th\u00E0nh c\u00F4ng","Body":"Xin ch\u00E0o Nguyen Van A,\n\nT\u00E0i kho\u1EA3n ng\u00E2n h\u00E0ng c\u1EE7a b\u1EA1n \u0111\u00E3 \u0111\u01B0\u1EE3c t\u1EA1o th\u00E0nh c\u00F4ng.\nCIF: CIF744262\nS\u1ED1 t\u00E0i kho\u1EA3n: 9704585675953","MessageId":"3182e94c-d61a-4f3e-a3b4-500b4c8bf9f1"}
+2025-07-30 08:06:00.757 +00:00 [INF] [Consumer] Processing: {"Method":"email","Email":"cuongvnabc@gmail.com","Subject":"T\u00E0i kho\u1EA3n ng\u00E2n h\u00E0ng \u0111\u00E3 \u0111\u01B0\u1EE3c m\u1EDF th\u00E0nh c\u00F4ng","Body":"Xin ch\u00E0o Nguyen Van A,\n\nT\u00E0i kho\u1EA3n ng\u00E2n h\u00E0ng c\u1EE7a b\u1EA1n \u0111\u00E3 \u0111\u01B0\u1EE3c t\u1EA1o th\u00E0nh c\u00F4ng.\nCIF: CIF744262\nS\u1ED1 t\u00E0i kho\u1EA3n: 9704365300948","MessageId":"0b9cbeac-3718-4e9f-be74-332199895c74"}
+2025-07-30 08:06:00.799 +00:00 [INF] [Consumer] Processing: {"Method":"email","Email":"cuongvnabc@gmail.com","Subject":"T\u00E0i kho\u1EA3n ng\u00E2n h\u00E0ng \u0111\u00E3 \u0111\u01B0\u1EE3c m\u1EDF th\u00E0nh c\u00F4ng","Body":"Xin ch\u00E0o Nguyen Van A,\n\nT\u00E0i kho\u1EA3n ng\u00E2n h\u00E0ng c\u1EE7a b\u1EA1n \u0111\u00E3 \u0111\u01B0\u1EE3c t\u1EA1o th\u00E0nh c\u00F4ng.\nCIF: CIF744262\nS\u1ED1 t\u00E0i kho\u1EA3n: 9704902755765","MessageId":"8ca93c45-9788-43b7-a14d-fa340bbeb0ff"}
+2025-07-30 08:06:03.623 +00:00 [INF] Đã gửi email đến: cuongvnabc@gmail.com
+2025-07-30 08:06:04.806 +00:00 [INF] Đã gửi email đến: cuongvnabc@gmail.com
+2025-07-30 08:06:05.517 +00:00 [INF] Đã gửi email đến: cuongvnabc@gmail.com
+2025-07-30 08:06:06.124 +00:00 [INF] Đã gửi email đến: cuongvnabc@gmail.com
+2025-07-30 08:06:06.991 +00:00 [INF] Đã gửi email đến: cuongvnabc@gmail.com
+2025-07-30 08:30:14.921 +00:00 [INF] Logger initialized
+2025-07-30 08:30:14.999 +00:00 [INF] Starting Message Service...
+2025-07-30 08:30:15.214 +00:00 [INF] Starting MessageConsumer...
+2025-07-30 08:30:15.322 +00:00 [INF] Connected to RabbitMQ successfully
+2025-07-30 08:30:15.328 +00:00 [INF] Message service is running...
+2025-07-30 08:31:58.079 +00:00 [INF] [Consumer] Processing: {"Phone":"0706608882","Email":"cuongvnabc@gmail.com","Method":"email","Otp":"650232","Subject":"M\u00E3 OTP x\u00E1c th\u1EF1c \u0111\u0103ng k\u00FD","Body":"M\u00E3 OTP c\u1EE7a b\u1EA1n l\u00E0: 650232 (h\u1EBFt h\u1EA1n sau 5 ph\u00FAt)."}
+2025-07-30 08:32:01.884 +00:00 [INF] Đã gửi email đến: cuongvnabc@gmail.com
+2025-07-30 08:32:35.963 +00:00 [INF] [Consumer] Processing: {"Method":"email","Email":"cuongvnabc@gmail.com","Subject":"T\u00E0i kho\u1EA3n ng\u00E2n h\u00E0ng \u0111\u00E3 \u0111\u01B0\u1EE3c m\u1EDF th\u00E0nh c\u00F4ng","Body":"Xin ch\u00E0o Nguyen Van A,\n\nT\u00E0i kho\u1EA3n ng\u00E2n h\u00E0ng c\u1EE7a b\u1EA1n \u0111\u00E3 \u0111\u01B0\u1EE3c t\u1EA1o th\u00E0nh c\u00F4ng.\nCIF: CIFa62557\nS\u1ED1 t\u00E0i kho\u1EA3n: 9704534571060","MessageId":"890e966c-0fd1-426e-a8f5-1a1278c053da"}
+2025-07-30 08:32:36.052 +00:00 [INF] [Consumer] Processing: {"Method":"email","Email":"cuongvnabc@gmail.com","Subject":"T\u00E0i kho\u1EA3n ng\u00E2n h\u00E0ng \u0111\u00E3 \u0111\u01B0\u1EE3c m\u1EDF th\u00E0nh c\u00F4ng","Body":"Xin ch\u00E0o Nguyen Van A,\n\nT\u00E0i kho\u1EA3n ng\u00E2n h\u00E0ng c\u1EE7a b\u1EA1n \u0111\u00E3 \u0111\u01B0\u1EE3c t\u1EA1o th\u00E0nh c\u00F4ng.\nCIF: CIFa62557\nS\u1ED1 t\u00E0i kho\u1EA3n: 9704213144362","MessageId":"df088f9b-ad03-4a5c-9c2a-3e655175e470"}
+2025-07-30 08:32:36.109 +00:00 [INF] [Consumer] Processing: {"Method":"email","Email":"cuongvnabc@gmail.com","Subject":"T\u00E0i kho\u1EA3n ng\u00E2n h\u00E0ng \u0111\u00E3 \u0111\u01B0\u1EE3c m\u1EDF th\u00E0nh c\u00F4ng","Body":"Xin ch\u00E0o Nguyen Van A,\n\nT\u00E0i kho\u1EA3n ng\u00E2n h\u00E0ng c\u1EE7a b\u1EA1n \u0111\u00E3 \u0111\u01B0\u1EE3c t\u1EA1o th\u00E0nh c\u00F4ng.\nCIF: CIFa62557\nS\u1ED1 t\u00E0i kho\u1EA3n: 9704395078446","MessageId":"1bb0740c-fed3-4c80-bc43-b409c2428bda"}
+2025-07-30 08:32:36.143 +00:00 [INF] [Consumer] Processing: {"Method":"email","Email":"cuongvnabc@gmail.com","Subject":"T\u00E0i kho\u1EA3n ng\u00E2n h\u00E0ng \u0111\u00E3 \u0111\u01B0\u1EE3c m\u1EDF th\u00E0nh c\u00F4ng","Body":"Xin ch\u00E0o Nguyen Van A,\n\nT\u00E0i kho\u1EA3n ng\u00E2n h\u00E0ng c\u1EE7a b\u1EA1n \u0111\u00E3 \u0111\u01B0\u1EE3c t\u1EA1o th\u00E0nh c\u00F4ng.\nCIF: CIFa62557\nS\u1ED1 t\u00E0i kho\u1EA3n: 9704564088591","MessageId":"f84f8d8f-b951-4a2d-b2e3-4add54b287a5"}
+2025-07-30 08:32:36.180 +00:00 [INF] [Consumer] Processing: {"Method":"email","Email":"cuongvnabc@gmail.com","Subject":"T\u00E0i kho\u1EA3n ng\u00E2n h\u00E0ng \u0111\u00E3 \u0111\u01B0\u1EE3c m\u1EDF th\u00E0nh c\u00F4ng","Body":"Xin ch\u00E0o Nguyen Van A,\n\nT\u00E0i kho\u1EA3n ng\u00E2n h\u00E0ng c\u1EE7a b\u1EA1n \u0111\u00E3 \u0111\u01B0\u1EE3c t\u1EA1o th\u00E0nh c\u00F4ng.\nCIF: CIFa62557\nS\u1ED1 t\u00E0i kho\u1EA3n: 9704743656547","MessageId":"99336ec3-aa8b-41b0-acd0-0e468fb071a8"}
+2025-07-30 08:32:39.484 +00:00 [INF] Đã gửi email đến: cuongvnabc@gmail.com
+2025-07-30 08:32:39.954 +00:00 [INF] Đã gửi email đến: cuongvnabc@gmail.com
+2025-07-30 08:32:40.166 +00:00 [INF] Đã gửi email đến: cuongvnabc@gmail.com
+2025-07-30 08:32:40.380 +00:00 [INF] Đã gửi email đến: cuongvnabc@gmail.com
+2025-07-30 08:32:41.164 +00:00 [INF] Đã gửi email đến: cuongvnabc@gmail.com
+2025-07-30 08:41:57.929 +00:00 [INF] [Consumer] Processing: {"Phone":"0706608882","Email":"cuongvnabc@gmail.com","Method":"email","Otp":"902160","Subject":"M\u00E3 OTP x\u00E1c th\u1EF1c \u0111\u0103ng k\u00FD","Body":"M\u00E3 OTP c\u1EE7a b\u1EA1n l\u00E0: 902160 (h\u1EBFt h\u1EA1n sau 5 ph\u00FAt)."}
+2025-07-30 08:42:02.735 +00:00 [INF] Đã gửi email đến: cuongvnabc@gmail.com
+2025-07-30 08:42:21.100 +00:00 [INF] [Consumer] Processing: {"Method":"email","Email":"cuongvnabc@gmail.com","Subject":"T\u00E0i kho\u1EA3n ng\u00E2n h\u00E0ng \u0111\u00E3 \u0111\u01B0\u1EE3c m\u1EDF th\u00E0nh c\u00F4ng","Body":"Xin ch\u00E0o Nguyen Van A,\n\nT\u00E0i kho\u1EA3n ng\u00E2n h\u00E0ng c\u1EE7a b\u1EA1n \u0111\u00E3 \u0111\u01B0\u1EE3c t\u1EA1o th\u00E0nh c\u00F4ng.\nCIF: CIFc32dbf\nS\u1ED1 t\u00E0i kho\u1EA3n: 9704351591217","MessageId":"48957117-30a0-4020-aa3b-60e8096a95c8"}
+2025-07-30 08:42:21.153 +00:00 [INF] [Consumer] Processing: {"Method":"email","Email":"cuongvnabc@gmail.com","Subject":"T\u00E0i kho\u1EA3n ng\u00E2n h\u00E0ng \u0111\u00E3 \u0111\u01B0\u1EE3c m\u1EDF th\u00E0nh c\u00F4ng","Body":"Xin ch\u00E0o Nguyen Van A,\n\nT\u00E0i kho\u1EA3n ng\u00E2n h\u00E0ng c\u1EE7a b\u1EA1n \u0111\u00E3 \u0111\u01B0\u1EE3c t\u1EA1o th\u00E0nh c\u00F4ng.\nCIF: CIFc32dbf\nS\u1ED1 t\u00E0i kho\u1EA3n: 9704309573274","MessageId":"f9d506d1-105b-4bca-be83-183b0608a746"}
+2025-07-30 08:42:21.213 +00:00 [INF] [Consumer] Processing: {"Method":"email","Email":"cuongvnabc@gmail.com","Subject":"T\u00E0i kho\u1EA3n ng\u00E2n h\u00E0ng \u0111\u00E3 \u0111\u01B0\u1EE3c m\u1EDF th\u00E0nh c\u00F4ng","Body":"Xin ch\u00E0o Nguyen Van A,\n\nT\u00E0i kho\u1EA3n ng\u00E2n h\u00E0ng c\u1EE7a b\u1EA1n \u0111\u00E3 \u0111\u01B0\u1EE3c t\u1EA1o th\u00E0nh c\u00F4ng.\nCIF: CIFc32dbf\nS\u1ED1 t\u00E0i kho\u1EA3n: 9704866322782","MessageId":"05d65869-81d7-4e6b-b540-a12daf986c6c"}
+2025-07-30 08:42:21.265 +00:00 [INF] [Consumer] Processing: {"Method":"email","Email":"cuongvnabc@gmail.com","Subject":"T\u00E0i kho\u1EA3n ng\u00E2n h\u00E0ng \u0111\u00E3 \u0111\u01B0\u1EE3c m\u1EDF th\u00E0nh c\u00F4ng","Body":"Xin ch\u00E0o Nguyen Van A,\n\nT\u00E0i kho\u1EA3n ng\u00E2n h\u00E0ng c\u1EE7a b\u1EA1n \u0111\u00E3 \u0111\u01B0\u1EE3c t\u1EA1o th\u00E0nh c\u00F4ng.\nCIF: CIFc32dbf\nS\u1ED1 t\u00E0i kho\u1EA3n: 9704602413696","MessageId":"1bb6469f-54df-4440-9b26-e878f7012e8d"}
+2025-07-30 08:42:21.320 +00:00 [INF] [Consumer] Processing: {"Method":"email","Email":"cuongvnabc@gmail.com","Subject":"T\u00E0i kho\u1EA3n ng\u00E2n h\u00E0ng \u0111\u00E3 \u0111\u01B0\u1EE3c m\u1EDF th\u00E0nh c\u00F4ng","Body":"Xin ch\u00E0o Nguyen Van A,\n\nT\u00E0i kho\u1EA3n ng\u00E2n h\u00E0ng c\u1EE7a b\u1EA1n \u0111\u00E3 \u0111\u01B0\u1EE3c t\u1EA1o th\u00E0nh c\u00F4ng.\nCIF: CIFc32dbf\nS\u1ED1 t\u00E0i kho\u1EA3n: 9704801405664","MessageId":"b3e2dedc-cd8b-474a-9659-4fc88f070ab7"}
+2025-07-30 08:42:24.726 +00:00 [INF] Đã gửi email đến: cuongvnabc@gmail.com
+2025-07-30 08:42:25.364 +00:00 [INF] Đã gửi email đến: cuongvnabc@gmail.com
+2025-07-30 08:42:25.679 +00:00 [INF] Đã gửi email đến: cuongvnabc@gmail.com
+2025-07-30 08:42:25.789 +00:00 [INF] Đã gửi email đến: cuongvnabc@gmail.com
+2025-07-30 08:42:26.107 +00:00 [INF] Đã gửi email đến: cuongvnabc@gmail.com
+2025-07-30 09:02:39.038 +00:00 [INF] [Consumer] Processing: {"Phone":"0706608882","Email":"cuongvnabc@gmail.com","Method":"email","Otp":"763907","Subject":"M\u00E3 OTP x\u00E1c th\u1EF1c \u0111\u0103ng k\u00FD","Body":"M\u00E3 OTP c\u1EE7a b\u1EA1n l\u00E0: 763907 (h\u1EBFt h\u1EA1n sau 5 ph\u00FAt)."}
+2025-07-30 09:02:42.844 +00:00 [INF] Đã gửi email đến: cuongvnabc@gmail.com
+2025-07-30 09:02:56.482 +00:00 [INF] [Consumer] Processing: {"Method":"email","Email":"cuongvnabc@gmail.com","Subject":"T\u00E0i kho\u1EA3n ng\u00E2n h\u00E0ng \u0111\u00E3 \u0111\u01B0\u1EE3c m\u1EDF th\u00E0nh c\u00F4ng","Body":"Xin ch\u00E0o Nguyen Van A,\n\nT\u00E0i kho\u1EA3n ng\u00E2n h\u00E0ng c\u1EE7a b\u1EA1n \u0111\u00E3 \u0111\u01B0\u1EE3c t\u1EA1o th\u00E0nh c\u00F4ng.\nCIF: CIF43f51b\nS\u1ED1 t\u00E0i kho\u1EA3n: 9704561215045","MessageId":"af98b2f4-5294-482a-bc93-26d67e8f006c"}
+2025-07-30 09:02:59.603 +00:00 [INF] Đã gửi email đến: cuongvnabc@gmail.com
+2025-07-30 09:04:58.734 +00:00 [INF] [Consumer] Processing: {"Phone":"0706608882","Email":"cuongvnabc@gmail.com","Method":"email","Otp":"466814","Subject":"M\u00E3 OTP x\u00E1c th\u1EF1c \u0111\u0103ng k\u00FD","Body":"M\u00E3 OTP c\u1EE7a b\u1EA1n l\u00E0: 466814 (h\u1EBFt h\u1EA1n sau 5 ph\u00FAt)."}
+2025-07-30 09:05:02.498 +00:00 [INF] Đã gửi email đến: cuongvnabc@gmail.com
+2025-07-30 09:05:17.134 +00:00 [INF] [Consumer] Processing: {"Method":"email","Email":"cuongvnabc@gmail.com","Subject":"T\u00E0i kho\u1EA3n ng\u00E2n h\u00E0ng \u0111\u00E3 \u0111\u01B0\u1EE3c m\u1EDF th\u00E0nh c\u00F4ng","Body":"Xin ch\u00E0o Nguyen Van A,\n\nT\u00E0i kho\u1EA3n ng\u00E2n h\u00E0ng c\u1EE7a b\u1EA1n \u0111\u00E3 \u0111\u01B0\u1EE3c t\u1EA1o th\u00E0nh c\u00F4ng.\nCIF: CIF5f3d4f\nS\u1ED1 t\u00E0i kho\u1EA3n: 9704528316157","MessageId":"213389bd-6ab0-4f17-88b3-b7fa3ef0ed51"}
+2025-07-30 09:05:20.755 +00:00 [INF] Đã gửi email đến: cuongvnabc@gmail.com
+2025-07-30 09:07:35.913 +00:00 [INF] [Consumer] Processing: {"Phone":"0706608882","Email":"cuongvnabc@gmail.com","Method":"email","Otp":"998024","Subject":"M\u00E3 OTP x\u00E1c th\u1EF1c \u0111\u0103ng k\u00FD","Body":"M\u00E3 OTP c\u1EE7a b\u1EA1n l\u00E0: 998024 (h\u1EBFt h\u1EA1n sau 5 ph\u00FAt)."}
+2025-07-30 09:07:39.585 +00:00 [INF] Đã gửi email đến: cuongvnabc@gmail.com
+2025-07-30 09:07:55.739 +00:00 [INF] [Consumer] Processing: {"Method":"email","Email":"cuongvnabc@gmail.com","Subject":"T\u00E0i kho\u1EA3n ng\u00E2n h\u00E0ng \u0111\u00E3 \u0111\u01B0\u1EE3c m\u1EDF th\u00E0nh c\u00F4ng","Body":"Xin ch\u00E0o Nguyen Van A,\n\nT\u00E0i kho\u1EA3n ng\u00E2n h\u00E0ng c\u1EE7a b\u1EA1n \u0111\u00E3 \u0111\u01B0\u1EE3c t\u1EA1o th\u00E0nh c\u00F4ng.\nCIF: CIFb50af7\nS\u1ED1 t\u00E0i kho\u1EA3n: 9704723065343","MessageId":"2ed4bd0d-6c1d-4aee-a39a-4eeff844186c"}
+2025-07-30 09:07:59.750 +00:00 [INF] Đã gửi email đến: cuongvnabc@gmail.com
+2025-07-30 09:33:56.813 +00:00 [INF] Logger initialized
+2025-07-30 09:33:56.911 +00:00 [INF] Starting Message Service...
+2025-07-30 09:33:57.175 +00:00 [INF] Starting MessageConsumer...
+2025-07-30 09:33:57.282 +00:00 [INF] Connected to RabbitMQ successfully
+2025-07-30 09:33:57.291 +00:00 [INF] Message service is running...
+2025-07-30 09:34:11.773 +00:00 [INF] [Consumer] Processing: {"Phone":"0706608882","Email":"cuongvnabc@gmail.com","Method":"email","Otp":"112651","Subject":"M\u00E3 OTP x\u00E1c th\u1EF1c \u0111\u0103ng k\u00FD","Body":"M\u00E3 OTP c\u1EE7a b\u1EA1n l\u00E0: 112651 (h\u1EBFt h\u1EA1n sau 5 ph\u00FAt)."}
+2025-07-30 09:34:16.050 +00:00 [INF] Đã gửi email đến: cuongvnabc@gmail.com
+2025-07-30 09:34:44.838 +00:00 [INF] [Consumer] Processing: {"Method":"email","Email":"cuongvnabc@gmail.com","Subject":"T\u00E0i kho\u1EA3n ng\u00E2n h\u00E0ng \u0111\u00E3 \u0111\u01B0\u1EE3c m\u1EDF th\u00E0nh c\u00F4ng","Body":"Xin ch\u00E0o Nguyen Van A,\n\nT\u00E0i kho\u1EA3n ng\u00E2n h\u00E0ng c\u1EE7a b\u1EA1n \u0111\u00E3 \u0111\u01B0\u1EE3c t\u1EA1o th\u00E0nh c\u00F4ng.\nCIF: CIF24910b\nS\u1ED1 t\u00E0i kho\u1EA3n: 9704546789628","MessageId":"5b7b7dda-3f4e-48f9-94f8-8b604d92e5a6"}
+2025-07-30 09:34:48.815 +00:00 [INF] Đã gửi email đến: cuongvnabc@gmail.com

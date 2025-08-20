@@ -1,0 +1,40 @@
+2025-07-29 14:27:37.446 +00:00 [INF] Logger initialized
+2025-07-29 14:27:37.525 +00:00 [INF] Starting Message Service...
+2025-07-29 14:27:37.525 +00:00 [INF] Starting MessageConsumer...
+2025-07-29 14:27:37.630 +00:00 [INF] Connected to RabbitMQ successfully
+2025-07-29 14:27:37.634 +00:00 [INF] Message service is running...
+2025-07-29 14:34:19.829 +00:00 [INF] [Consumer] Received: Phone=0706608882, Email=cuongvnabc@gmail.com, Method=email, OTP=447280
+2025-07-29 14:34:22.874 +00:00 [INF] Đã gửi email đến: cuongvnabc@gmail.com
+2025-07-29 14:36:43.760 +00:00 [INF] [Consumer] Received: Phone=0706608882, Email=cuongvnabc@gmail.com, Method=email, OTP=389153
+2025-07-29 14:36:46.532 +00:00 [INF] Đã gửi email đến: cuongvnabc@gmail.com
+2025-07-29 14:42:48.076 +00:00 [INF] [Consumer] Received: Phone=0706608882, Email=cuongvnabc@gmail.com, Method=email, OTP=636272
+2025-07-29 14:42:51.884 +00:00 [INF] Đã gửi email đến: cuongvnabc@gmail.com
+2025-07-29 15:18:01.344 +00:00 [INF] Logger initialized
+2025-07-29 15:18:01.423 +00:00 [INF] Starting Message Service...
+2025-07-29 15:18:01.424 +00:00 [INF] Starting MessageConsumer...
+2025-07-29 15:18:01.527 +00:00 [INF] Connected to RabbitMQ successfully
+2025-07-29 15:18:01.538 +00:00 [INF] Message service is running...
+2025-07-29 15:29:28.260 +00:00 [INF] Logger initialized
+2025-07-29 15:29:28.344 +00:00 [INF] Starting Message Service...
+2025-07-29 15:29:28.344 +00:00 [INF] Starting MessageConsumer...
+2025-07-29 15:29:28.455 +00:00 [INF] Connected to RabbitMQ successfully
+2025-07-29 15:29:28.460 +00:00 [INF] Message service is running...
+2025-07-29 15:29:43.019 +00:00 [INF] [Consumer] Received: Phone=0706608882, Email=cuongvnabc@gmail.com, Method=email, OTP=468837
+2025-07-29 15:29:46.054 +00:00 [INF] Đã gửi email đến: cuongvnabc@gmail.com
+2025-07-29 15:59:22.494 +00:00 [INF] [Consumer] Received: Phone=0706608882, Email=cuongvnabc@gmail.com, Method=email, OTP=336385
+2025-07-29 15:59:26.126 +00:00 [INF] Đã gửi email đến: cuongvnabc@gmail.com
+2025-07-29 16:00:10.723 +00:00 [INF] [Consumer] Received: Phone=0706608882, Email=cuongvnabc@gmail.com, Method=email, OTP=560891
+2025-07-29 16:00:14.410 +00:00 [INF] Đã gửi email đến: cuongvnabc@gmail.com
+2025-07-29 16:06:11.798 +00:00 [INF] [Consumer] Received: Phone=0706608882, Email=cuongvnabc@gmail.com, Method=email, OTP=826650
+2025-07-29 16:06:15.577 +00:00 [INF] Đã gửi email đến: cuongvnabc@gmail.com
+2025-07-29 16:18:00.933 +00:00 [INF] [Consumer] Received: Phone=0706608882, Email=cuongvnabc@gmail.com, Method=email, OTP=953736
+2025-07-29 16:18:04.527 +00:00 [INF] Đã gửi email đến: cuongvnabc@gmail.com
+2025-07-29 16:27:58.242 +00:00 [INF] Logger initialized
+2025-07-29 16:27:58.267 +00:00 [INF] Starting Message Service...
+2025-07-29 16:27:58.268 +00:00 [INF] Starting MessageConsumer...
+2025-07-29 16:27:58.373 +00:00 [INF] Connected to RabbitMQ successfully
+2025-07-29 16:27:58.378 +00:00 [INF] Message service is running...
+2025-07-29 16:28:11.230 +00:00 [INF] [Consumer] Received: Phone=0706608882, Email=cuongvnabc@gmail.com, Method=email, OTP=584689
+2025-07-29 16:28:14.212 +00:00 [INF] Đã gửi email đến: cuongvnabc@gmail.com
+2025-07-29 16:34:20.015 +00:00 [INF] [Consumer] Received: Phone=0706608882, Email=cuongvnabc@gmail.com, Method=email, OTP=865420
+2025-07-29 16:34:22.983 +00:00 [INF] Đã gửi email đến: cuongvnabc@gmail.com

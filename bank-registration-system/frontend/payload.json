@@ -1,0 +1,25 @@
+{
+    "variables": [
+        {
+            "name": "accountDataInput",
+            "value": {
+                "phone": "0706608882",
+                "email": "abc@gmail.com",
+                "name": "Nguyen Van A",
+                "dob": "2000-01-01",
+                "cccd": "012345678912",
+                "hometown": "Hà Nội"
+            },
+            "type": "java.util.Map"
+        },
+        {
+            "name": "formthongtinkh",
+            "value": {
+                "phone": "0706608882",
+                "email": "abc@gmail.com",
+                "method": "email"
+            },
+            "type": "java.util.Map"
+        }
+    ]
+}

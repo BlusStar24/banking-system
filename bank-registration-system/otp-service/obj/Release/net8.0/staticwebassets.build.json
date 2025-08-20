@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "wGNOsiuF6NGbOoamnst807hhMwwzrGyb9uUpczNl1So=",
+  "Source": "otp-service",
+  "BasePath": "_content/otp-service",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

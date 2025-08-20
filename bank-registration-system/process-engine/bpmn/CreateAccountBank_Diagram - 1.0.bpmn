@@ -1,0 +1,756 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bonitaConnector="http://www.bonitasoft.org/studio/connector/definition/6.0" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:di_1="http://www.omg.org/spec/DD/20100524/DI" xmlns:java="http://jcp.org/en/jsr/detail?id=270" xmlns:model="http://www.omg.org/spec/BPMN/20100524/MODEL" xsi:schemaLocation="schemaLocation http://www.omg.org/spec/BPMN/20100524/MODEL schemas/BPMN20.xsd" exporter="BonitaSoft" exporterVersion="10.2.0" expressionLanguage="http://groovy.apache.org/" targetNamespace="http://bonitasoft.com/_aFlRcGF0EfCNRPlivZqhfQ">
+  <model:import importType="http://www.w3.org/2001/XMLSchema" location="connectorDefs/rest-post.xsd" namespace="http://www.bonitasoft.org/studio/connector/definition/6.1"/>
+  <model:collaboration id="_aFlRcGF0EfCNRPlivZqhfQ">
+    <model:participant id="_fdab4GHvEfCX_usy7k7KlA" name="Pool" processRef="_aFlRcWF0EfCNRPlivZqhfQ"/>
+    <model:participant id="_aFlRi2F0EfCNRPlivZqhfQ" name="Employee actor">
+      <model:documentation><![CDATA[This is an example of actor that is mapped to any ACME users]]></model:documentation>
+    </model:participant>
+  </model:collaboration>
+  <model:process id="_aFlRcWF0EfCNRPlivZqhfQ" name="Pool">
+    <model:ioSpecification id="_fdab4mHvEfCX_usy7k7KlA">
+      <model:dataInput id="_fdab42HvEfCX_usy7k7KlA" itemSubjectRef="__xaIIGF1EfCNRPlivZqhfQ"/>
+      <model:dataInput id="_fdab6WHvEfCX_usy7k7KlA" itemSubjectRef="_BIlWcGF2EfCNRPlivZqhfQ"/>
+      <model:dataInput id="_fdab72HvEfCX_usy7k7KlA" itemSubjectRef="_CcEXkGF2EfCNRPlivZqhfQ"/>
+      <model:dataInput id="_fdab9WHvEfCX_usy7k7KlA" itemSubjectRef="_El5x4GF2EfCNRPlivZqhfQ"/>
+      <model:dataInput id="_fdab-2HvEfCX_usy7k7KlA" itemSubjectRef="_HxaEkGF2EfCNRPlivZqhfQ"/>
+      <model:dataInput id="_fdacAWHvEfCX_usy7k7KlA" itemSubjectRef="_J7WMkGF2EfCNRPlivZqhfQ"/>
+      <model:dataInput id="_fdacB2HvEfCX_usy7k7KlA" itemSubjectRef="_wAq4oGGIEfCNRPlivZqhfQ"/>
+      <model:dataInput id="_fdacDWHvEfCX_usy7k7KlA" itemSubjectRef="_UgNF4GGLEfCNRPlivZqhfQ"/>
+      <model:dataInput id="_fdacE2HvEfCX_usy7k7KlA" itemSubjectRef="_gQMiIGGLEfCNRPlivZqhfQ"/>
+      <model:dataInput id="_fdacGWHvEfCX_usy7k7KlA" itemSubjectRef="_ln_tQGGLEfCNRPlivZqhfQ"/>
+      <model:inputSet id="_fdab5GHvEfCX_usy7k7KlA">
+        <model:dataInputRefs>_fdab42HvEfCX_usy7k7KlA</model:dataInputRefs>
+      </model:inputSet>
+      <model:inputSet id="_fdab6mHvEfCX_usy7k7KlA">
+        <model:dataInputRefs>_fdab6WHvEfCX_usy7k7KlA</model:dataInputRefs>
+      </model:inputSet>
+      <model:inputSet id="_fdab8GHvEfCX_usy7k7KlA">
+        <model:dataInputRefs>_fdab72HvEfCX_usy7k7KlA</model:dataInputRefs>
+      </model:inputSet>
+      <model:inputSet id="_fdab9mHvEfCX_usy7k7KlA">
+        <model:dataInputRefs>_fdab9WHvEfCX_usy7k7KlA</model:dataInputRefs>
+      </model:inputSet>
+      <model:inputSet id="_fdab_GHvEfCX_usy7k7KlA">
+        <model:dataInputRefs>_fdab-2HvEfCX_usy7k7KlA</model:dataInputRefs>
+      </model:inputSet>
+      <model:inputSet id="_fdacAmHvEfCX_usy7k7KlA">
+        <model:dataInputRefs>_fdacAWHvEfCX_usy7k7KlA</model:dataInputRefs>
+      </model:inputSet>
+      <model:inputSet id="_fdacCGHvEfCX_usy7k7KlA">
+        <model:dataInputRefs>_fdacB2HvEfCX_usy7k7KlA</model:dataInputRefs>
+      </model:inputSet>
+      <model:inputSet id="_fdacDmHvEfCX_usy7k7KlA">
+        <model:dataInputRefs>_fdacDWHvEfCX_usy7k7KlA</model:dataInputRefs>
+      </model:inputSet>
+      <model:inputSet id="_fdacFGHvEfCX_usy7k7KlA">
+        <model:dataInputRefs>_fdacE2HvEfCX_usy7k7KlA</model:dataInputRefs>
+      </model:inputSet>
+      <model:inputSet id="_fdacGmHvEfCX_usy7k7KlA">
+        <model:dataInputRefs>_fdacGWHvEfCX_usy7k7KlA</model:dataInputRefs>
+      </model:inputSet>
+      <model:outputSet id="_fdacHmHvEfCX_usy7k7KlA"/>
+    </model:ioSpecification>
+    <model:laneSet id="pool_laneSet">
+      <model:lane id="_aFlRcmF0EfCNRPlivZqhfQ" name="Create Account Bank">
+        <model:flowNodeRef>_aFlRc2F0EfCNRPlivZqhfQ</model:flowNodeRef>
+        <model:flowNodeRef>_kmgSgGF0EfCNRPlivZqhfQ</model:flowNodeRef>
+        <model:flowNodeRef>_qDffoGF0EfCNRPlivZqhfQ</model:flowNodeRef>
+        <model:flowNodeRef>_3yPHkGF0EfCNRPlivZqhfQ</model:flowNodeRef>
+        <model:flowNodeRef>_9tPGYGF0EfCNRPlivZqhfQ</model:flowNodeRef>
+        <model:flowNodeRef>_LndlkGF1EfCNRPlivZqhfQ</model:flowNodeRef>
+        <model:flowNodeRef>_QTOxIGF1EfCNRPlivZqhfQ</model:flowNodeRef>
+        <model:flowNodeRef>_QAJ-8GGHEfCNRPlivZqhfQ</model:flowNodeRef>
+        <model:flowNodeRef>_TaZRMGGHEfCNRPlivZqhfQ</model:flowNodeRef>
+        <model:flowNodeRef>_s_8vEGGHEfCNRPlivZqhfQ</model:flowNodeRef>
+        <model:flowNodeRef>_zaUxgGGHEfCNRPlivZqhfQ</model:flowNodeRef>
+        <model:flowNodeRef>_2UWSoGGHEfCNRPlivZqhfQ</model:flowNodeRef>
+      </model:lane>
+    </model:laneSet>
+    <model:dataObject id="DataObject_fdab4WHvEfCX_usy7k7KlA__xaIIGF1EfCNRPlivZqhfQ" name="email" isCollection="false" itemSubjectRef="__xaIIGF1EfCNRPlivZqhfQ">
+      <model:documentation><![CDATA[Nhập từ frontend]]></model:documentation>
+    </model:dataObject>
+    <model:dataObject id="DataObject_fdab6GHvEfCX_usy7k7KlA_BIlWcGF2EfCNRPlivZqhfQ" name="otp" isCollection="false" itemSubjectRef="_BIlWcGF2EfCNRPlivZqhfQ">
+      <model:documentation><![CDATA[Nhập từ frontend
+]]></model:documentation>
+    </model:dataObject>
+    <model:dataObject id="DataObject_fdab7mHvEfCX_usy7k7KlA_CcEXkGF2EfCNRPlivZqhfQ" name="name" isCollection="false" itemSubjectRef="_CcEXkGF2EfCNRPlivZqhfQ">
+      <model:documentation><![CDATA[Nhập từ frontend]]></model:documentation>
+    </model:dataObject>
+    <model:dataObject id="DataObject_fdab9GHvEfCX_usy7k7KlA_El5x4GF2EfCNRPlivZqhfQ" name="status" isCollection="false" itemSubjectRef="_El5x4GF2EfCNRPlivZqhfQ">
+      <model:documentation><![CDATA[Nhập từ frontend]]></model:documentation>
+    </model:dataObject>
+    <model:dataObject id="DataObject_fdab-mHvEfCX_usy7k7KlA_HxaEkGF2EfCNRPlivZqhfQ" name="otpVerified" isCollection="false" itemSubjectRef="_HxaEkGF2EfCNRPlivZqhfQ">
+      <model:documentation><![CDATA[Mặc định false, dùng cho gateway]]></model:documentation>
+    </model:dataObject>
+    <model:dataObject id="DataObject_fdacAGHvEfCX_usy7k7KlA_J7WMkGF2EfCNRPlivZqhfQ" name="blacklisted" isCollection="false" itemSubjectRef="_J7WMkGF2EfCNRPlivZqhfQ">
+      <model:documentation><![CDATA[Dùng để kiểm tra trong DB]]></model:documentation>
+    </model:dataObject>
+    <model:dataObject id="DataObject_fdacBmHvEfCX_usy7k7KlA_wAq4oGGIEfCNRPlivZqhfQ" name="cccd" isCollection="false" itemSubjectRef="_wAq4oGGIEfCNRPlivZqhfQ">
+      <model:documentation><![CDATA[kiểm tra số cccd trong blacklist]]></model:documentation>
+    </model:dataObject>
+    <model:dataObject id="DataObject_fdacDGHvEfCX_usy7k7KlA_UgNF4GGLEfCNRPlivZqhfQ" name="phone" isCollection="false" itemSubjectRef="_UgNF4GGLEfCNRPlivZqhfQ">
+      <model:documentation><![CDATA[số điện thoại]]></model:documentation>
+    </model:dataObject>
+    <model:dataObject id="DataObject_fdacEmHvEfCX_usy7k7KlA_gQMiIGGLEfCNRPlivZqhfQ" name="dob" isCollection="false" itemSubjectRef="_gQMiIGGLEfCNRPlivZqhfQ">
+      <model:documentation><![CDATA[ngày tháng năm sinh]]></model:documentation>
+    </model:dataObject>
+    <model:dataObject id="DataObject_fdacGGHvEfCX_usy7k7KlA_ln_tQGGLEfCNRPlivZqhfQ" name="hometown" isCollection="false" itemSubjectRef="_ln_tQGGLEfCNRPlivZqhfQ">
+      <model:documentation><![CDATA[quê quán]]></model:documentation>
+    </model:dataObject>
+    <model:startEvent id="_aFlRc2F0EfCNRPlivZqhfQ" name="Start1"/>
+    <model:serviceTask id="_kmgSgGF0EfCNRPlivZqhfQ" name="Verify OTP" implementation="BonitaConnector" operationRef="Execrest-post">
+      <model:ioSpecification id="_fdqTgGHvEfCX_usy7k7KlA">
+        <model:dataInput id="_fdqTgWHvEfCX_usy7k7KlA" itemSubjectRef="rest-postConnectorInput"/>
+        <model:dataInput id="_fdqTxGHvEfCX_usy7k7KlA" itemSubjectRef="_Q9cYgGGFEfCNRPlivZqhfQ"/>
+        <model:dataOutput id="_fdqTg2HvEfCX_usy7k7KlA" itemSubjectRef="rest-postConnectorOutput"/>
+        <model:inputSet id="_fdqTgmHvEfCX_usy7k7KlA">
+          <model:dataInputRefs>_fdqTgWHvEfCX_usy7k7KlA</model:dataInputRefs>
+        </model:inputSet>
+        <model:inputSet id="_fdqTxWHvEfCX_usy7k7KlA">
+          <model:dataInputRefs>_fdqTxGHvEfCX_usy7k7KlA</model:dataInputRefs>
+        </model:inputSet>
+        <model:outputSet id="_fdqThGHvEfCX_usy7k7KlA">
+          <model:dataOutputRefs>_fdqTg2HvEfCX_usy7k7KlA</model:dataOutputRefs>
+        </model:outputSet>
+      </model:ioSpecification>
+      <model:dataInputAssociation>
+        <model:targetRef>_fdqTgWHvEfCX_usy7k7KlA</model:targetRef>
+        <model:assignment>
+          <model:from xsi:type="model:tFormalExpression" id="_fdqThWHvEfCX_usy7k7KlA" evaluatesToTypeRef="java:java.lang.String" language="http://www.w3.org/1999/XPath"><![CDATA[http://otp-service:5000/api/otp/verify]]></model:from>
+          <model:to id="_fdqThmHvEfCX_usy7k7KlA">getDataInput('_fdqTgWHvEfCX_usy7k7KlA')/bonitaConnector:url</model:to>
+        </model:assignment>
+        <model:assignment>
+          <model:from xsi:type="model:tFormalExpression" id="_fdqTh2HvEfCX_usy7k7KlA" evaluatesToTypeRef="java:java.lang.String" language="http://www.w3.org/1999/XPath"><![CDATA[application/json]]></model:from>
+          <model:to id="_fdqTiGHvEfCX_usy7k7KlA">getDataInput('_fdqTgWHvEfCX_usy7k7KlA')/bonitaConnector:contentType</model:to>
+        </model:assignment>
+        <model:assignment>
+          <model:from xsi:type="model:tFormalExpression" id="_fdqTiWHvEfCX_usy7k7KlA" evaluatesToTypeRef="java:java.lang.String" language="http://www.w3.org/1999/XPath"><![CDATA[UTF-8]]></model:from>
+          <model:to id="_fdqTimHvEfCX_usy7k7KlA">getDataInput('_fdqTgWHvEfCX_usy7k7KlA')/bonitaConnector:charset</model:to>
+        </model:assignment>
+        <model:assignment>
+          <model:from xsi:type="model:tFormalExpression" id="_fdqTi2HvEfCX_usy7k7KlA" evaluatesToTypeRef="java:java.lang.String" language="http://www.w3.org/1999/XPath"><![CDATA[{
+  "email": "${email}",
+  "otp": "${otp}"
+}]]></model:from>
+          <model:to id="_fdqTjGHvEfCX_usy7k7KlA">getDataInput('_fdqTgWHvEfCX_usy7k7KlA')/bonitaConnector:body</model:to>
+        </model:assignment>
+        <model:assignment>
+          <model:from xsi:type="model:tFormalExpression" id="_fdqTjWHvEfCX_usy7k7KlA" evaluatesToTypeRef="java:java.lang.Boolean" language="http://www.w3.org/1999/XPath"><![CDATA[false]]></model:from>
+          <model:to id="_fdqTjmHvEfCX_usy7k7KlA">getDataInput('_fdqTgWHvEfCX_usy7k7KlA')/bonitaConnector:do_not_follow_redirect</model:to>
+        </model:assignment>
+        <model:assignment>
+          <model:from xsi:type="model:tFormalExpression" id="_fdqTj2HvEfCX_usy7k7KlA" evaluatesToTypeRef="java:java.lang.Boolean" language="http://www.w3.org/1999/XPath"><![CDATA[false]]></model:from>
+          <model:to id="_fdqTkGHvEfCX_usy7k7KlA">getDataInput('_fdqTgWHvEfCX_usy7k7KlA')/bonitaConnector:ignore_body</model:to>
+        </model:assignment>
+        <model:assignment>
+          <model:from xsi:type="model:tFormalExpression" id="_fdqTkWHvEfCX_usy7k7KlA" evaluatesToTypeRef="java:java.lang.Boolean" language="http://www.w3.org/1999/XPath"><![CDATA[true]]></model:from>
+          <model:to id="_fdqTkmHvEfCX_usy7k7KlA">getDataInput('_fdqTgWHvEfCX_usy7k7KlA')/bonitaConnector:TLS</model:to>
+        </model:assignment>
+        <model:assignment>
+          <model:from xsi:type="model:tFormalExpression" id="_fdqTk2HvEfCX_usy7k7KlA" evaluatesToTypeRef="java:java.lang.String" language="http://www.w3.org/1999/XPath"><![CDATA[]]></model:from>
+          <model:to id="_fdqTlGHvEfCX_usy7k7KlA">getDataInput('_fdqTgWHvEfCX_usy7k7KlA')/bonitaConnector:hostname_verifier</model:to>
+        </model:assignment>
+        <model:assignment>
+          <model:from xsi:type="model:tFormalExpression" id="_fdqTlWHvEfCX_usy7k7KlA" evaluatesToTypeRef="java:java.lang.String" language="http://www.w3.org/1999/XPath"><![CDATA[]]></model:from>
+          <model:to id="_fdqTlmHvEfCX_usy7k7KlA">getDataInput('_fdqTgWHvEfCX_usy7k7KlA')/bonitaConnector:trust_store_file</model:to>
+        </model:assignment>
+        <model:assignment>
+          <model:from xsi:type="model:tFormalExpression" id="_fdqTl2HvEfCX_usy7k7KlA" evaluatesToTypeRef="java:java.lang.String" language="http://www.w3.org/1999/XPath"><![CDATA[]]></model:from>
+          <model:to id="_fdqTmGHvEfCX_usy7k7KlA">getDataInput('_fdqTgWHvEfCX_usy7k7KlA')/bonitaConnector:trust_store_password</model:to>
+        </model:assignment>
+        <model:assignment>
+          <model:from xsi:type="model:tFormalExpression" id="_fdqTmWHvEfCX_usy7k7KlA" evaluatesToTypeRef="java:java.lang.String" language="http://www.w3.org/1999/XPath"><![CDATA[]]></model:from>
+          <model:to id="_fdqTmmHvEfCX_usy7k7KlA">getDataInput('_fdqTgWHvEfCX_usy7k7KlA')/bonitaConnector:key_store_file</model:to>
+        </model:assignment>
+        <model:assignment>
+          <model:from xsi:type="model:tFormalExpression" id="_fdqTm2HvEfCX_usy7k7KlA" evaluatesToTypeRef="java:java.lang.String" language="http://www.w3.org/1999/XPath"><![CDATA[]]></model:from>
+          <model:to id="_fdqTnGHvEfCX_usy7k7KlA">getDataInput('_fdqTgWHvEfCX_usy7k7KlA')/bonitaConnector:key_store_password</model:to>
+        </model:assignment>
+        <model:assignment>
+          <model:from xsi:type="model:tFormalExpression" id="_fdqTnWHvEfCX_usy7k7KlA" evaluatesToTypeRef="java:java.lang.String" language="http://www.w3.org/1999/XPath"><![CDATA[NONE]]></model:from>
+          <model:to id="_fdqTnmHvEfCX_usy7k7KlA">getDataInput('_fdqTgWHvEfCX_usy7k7KlA')/bonitaConnector:auth_type</model:to>
+        </model:assignment>
+        <model:assignment>
+          <model:from xsi:type="model:tFormalExpression" id="_fdqTn2HvEfCX_usy7k7KlA" evaluatesToTypeRef="java:java.lang.String" language="http://www.w3.org/1999/XPath"><![CDATA[]]></model:from>
+          <model:to id="_fdqToGHvEfCX_usy7k7KlA">getDataInput('_fdqTgWHvEfCX_usy7k7KlA')/bonitaConnector:auth_username</model:to>
+        </model:assignment>
+        <model:assignment>
+          <model:from xsi:type="model:tFormalExpression" id="_fdqToWHvEfCX_usy7k7KlA" evaluatesToTypeRef="java:java.lang.String" language="http://www.w3.org/1999/XPath"><![CDATA[]]></model:from>
+          <model:to id="_fdqTomHvEfCX_usy7k7KlA">getDataInput('_fdqTgWHvEfCX_usy7k7KlA')/bonitaConnector:auth_password</model:to>
+        </model:assignment>
+        <model:assignment>
+          <model:from xsi:type="model:tFormalExpression" id="_fdqTo2HvEfCX_usy7k7KlA" evaluatesToTypeRef="java:java.lang.String" language="http://www.w3.org/1999/XPath"><![CDATA[]]></model:from>
+          <model:to id="_fdqTpGHvEfCX_usy7k7KlA">getDataInput('_fdqTgWHvEfCX_usy7k7KlA')/bonitaConnector:auth_host</model:to>
+        </model:assignment>
+        <model:assignment>
+          <model:from xsi:type="model:tFormalExpression" id="_fdqTpWHvEfCX_usy7k7KlA" evaluatesToTypeRef="java:java.lang.Integer" language="http://www.w3.org/1999/XPath"><![CDATA[]]></model:from>
+          <model:to id="_fdqTpmHvEfCX_usy7k7KlA">getDataInput('_fdqTgWHvEfCX_usy7k7KlA')/bonitaConnector:auth_port</model:to>
+        </model:assignment>
+        <model:assignment>
+          <model:from xsi:type="model:tFormalExpression" id="_fdqTp2HvEfCX_usy7k7KlA" evaluatesToTypeRef="java:java.lang.String" language="http://www.w3.org/1999/XPath"><![CDATA[]]></model:from>
+          <model:to id="_fdqTqGHvEfCX_usy7k7KlA">getDataInput('_fdqTgWHvEfCX_usy7k7KlA')/bonitaConnector:auth_realm</model:to>
+        </model:assignment>
+        <model:assignment>
+          <model:from xsi:type="model:tFormalExpression" id="_fdqTqWHvEfCX_usy7k7KlA" evaluatesToTypeRef="java:java.lang.Boolean" language="http://www.w3.org/1999/XPath"><![CDATA[true]]></model:from>
+          <model:to id="_fdqTqmHvEfCX_usy7k7KlA">getDataInput('_fdqTgWHvEfCX_usy7k7KlA')/bonitaConnector:auth_preemptive</model:to>
+        </model:assignment>
+        <model:assignment>
+          <model:from xsi:type="model:tFormalExpression" id="_fdqTq2HvEfCX_usy7k7KlA" evaluatesToTypeRef="java:java.lang.String" language="http://www.w3.org/1999/XPath"><![CDATA[HTTP]]></model:from>
+          <model:to id="_fdqTrGHvEfCX_usy7k7KlA">getDataInput('_fdqTgWHvEfCX_usy7k7KlA')/bonitaConnector:proxy_protocol</model:to>
+        </model:assignment>
+        <model:assignment>
+          <model:from xsi:type="model:tFormalExpression" id="_fdqTrWHvEfCX_usy7k7KlA" evaluatesToTypeRef="java:java.lang.String" language="http://www.w3.org/1999/XPath"><![CDATA[]]></model:from>
+          <model:to id="_fdqTrmHvEfCX_usy7k7KlA">getDataInput('_fdqTgWHvEfCX_usy7k7KlA')/bonitaConnector:proxy_host</model:to>
+        </model:assignment>
+        <model:assignment>
+          <model:from xsi:type="model:tFormalExpression" id="_fdqTr2HvEfCX_usy7k7KlA" evaluatesToTypeRef="java:java.lang.Integer" language="http://www.w3.org/1999/XPath"><![CDATA[]]></model:from>
+          <model:to id="_fdqTsGHvEfCX_usy7k7KlA">getDataInput('_fdqTgWHvEfCX_usy7k7KlA')/bonitaConnector:proxy_port</model:to>
+        </model:assignment>
+        <model:assignment>
+          <model:from xsi:type="model:tFormalExpression" id="_fdqTsWHvEfCX_usy7k7KlA" evaluatesToTypeRef="java:java.lang.String" language="http://www.w3.org/1999/XPath"><![CDATA[]]></model:from>
+          <model:to id="_fdqTsmHvEfCX_usy7k7KlA">getDataInput('_fdqTgWHvEfCX_usy7k7KlA')/bonitaConnector:proxy_username</model:to>
+        </model:assignment>
+        <model:assignment>
+          <model:from xsi:type="model:tFormalExpression" id="_fdqTs2HvEfCX_usy7k7KlA" evaluatesToTypeRef="java:java.lang.String" language="http://www.w3.org/1999/XPath"><![CDATA[]]></model:from>
+          <model:to id="_fdqTtGHvEfCX_usy7k7KlA">getDataInput('_fdqTgWHvEfCX_usy7k7KlA')/bonitaConnector:proxy_password</model:to>
+        </model:assignment>
+        <model:assignment>
+          <model:from xsi:type="model:tFormalExpression" id="_fdqTtWHvEfCX_usy7k7KlA" evaluatesToTypeRef="java:java.lang.Integer" language="http://www.w3.org/1999/XPath"><![CDATA[60000]]></model:from>
+          <model:to id="_fdqTtmHvEfCX_usy7k7KlA">getDataInput('_fdqTgWHvEfCX_usy7k7KlA')/bonitaConnector:socket_timeout_ms</model:to>
+        </model:assignment>
+        <model:assignment>
+          <model:from xsi:type="model:tFormalExpression" id="_fdqTt2HvEfCX_usy7k7KlA" evaluatesToTypeRef="java:java.lang.Integer" language="http://www.w3.org/1999/XPath"><![CDATA[60000]]></model:from>
+          <model:to id="_fdqTuGHvEfCX_usy7k7KlA">getDataInput('_fdqTgWHvEfCX_usy7k7KlA')/bonitaConnector:connection_timeout_ms</model:to>
+        </model:assignment>
+        <model:assignment>
+          <model:from xsi:type="model:tFormalExpression" id="_fdqTuWHvEfCX_usy7k7KlA" evaluatesToTypeRef="java:java.lang.String" language="http://www.w3.org/1999/XPath"><![CDATA[DEFAULT]]></model:from>
+          <model:to id="_fdqTumHvEfCX_usy7k7KlA">getDataInput('_fdqTgWHvEfCX_usy7k7KlA')/bonitaConnector:trust_strategy</model:to>
+        </model:assignment>
+      </model:dataInputAssociation>
+      <model:dataOutputAssociation>
+        <model:targetRef>_fdqTg2HvEfCX_usy7k7KlA</model:targetRef>
+        <model:assignment>
+          <model:from id="_fdqTu2HvEfCX_usy7k7KlA">getDataOutput('_fdqTgWHvEfCX_usy7k7KlA')/bonitaConnector:bodyAsString</model:from>
+        </model:assignment>
+        <model:assignment>
+          <model:from id="_fdqTvGHvEfCX_usy7k7KlA">getDataOutput('_fdqTgWHvEfCX_usy7k7KlA')/bonitaConnector:bodyAsObject</model:from>
+        </model:assignment>
+        <model:assignment>
+          <model:from id="_fdqTvWHvEfCX_usy7k7KlA">getDataOutput('_fdqTgWHvEfCX_usy7k7KlA')/bonitaConnector:headers</model:from>
+        </model:assignment>
+        <model:assignment>
+          <model:from id="_fdqTvmHvEfCX_usy7k7KlA">getDataOutput('_fdqTgWHvEfCX_usy7k7KlA')/bonitaConnector:status_code</model:from>
+          <model:to xsi:type="model:tFormalExpression" id="_fdqTv2HvEfCX_usy7k7KlA" evaluatesToTypeRef="java:java.lang.Integer" language="http://www.w3.org/1999/XPath">getDataObject('statusCode')</model:to>
+        </model:assignment>
+        <model:assignment>
+          <model:from id="_fdqTwGHvEfCX_usy7k7KlA">getDataOutput('_fdqTgWHvEfCX_usy7k7KlA')/bonitaConnector:status_message</model:from>
+        </model:assignment>
+        <model:assignment>
+          <model:from xsi:type="model:tFormalExpression" id="_fdqTwWHvEfCX_usy7k7KlA" evaluatesToTypeRef="java:java.lang.Boolean"><![CDATA[bodyAsObject.otpVerified]]></model:from>
+          <model:to xsi:type="model:tFormalExpression" id="_fdqTwmHvEfCX_usy7k7KlA" evaluatesToTypeRef="java:java.lang.Boolean" language="http://www.w3.org/1999/XPath">getDataObject('_HxaEkGF2EfCNRPlivZqhfQ')</model:to>
+        </model:assignment>
+      </model:dataOutputAssociation>
+    </model:serviceTask>
+    <model:dataObject id="DataObject_fdqTw2HvEfCX_usy7k7KlA_Q9cYgGGFEfCNRPlivZqhfQ" name="statusCode" isCollection="false" itemSubjectRef="_Q9cYgGGFEfCNRPlivZqhfQ"/>
+    <model:exclusiveGateway id="_qDffoGF0EfCNRPlivZqhfQ" name="OTP = true"/>
+    <model:userTask id="_3yPHkGF0EfCNRPlivZqhfQ" name="Nhan vien phe duỵet"/>
+    <model:parallelGateway id="_9tPGYGF0EfCNRPlivZqhfQ" name="Gateway BlackList = flase"/>
+    <model:serviceTask id="_LndlkGF1EfCNRPlivZqhfQ" name="Create Account" implementation="BonitaConnector" operationRef="Execrest-post">
+      <model:ioSpecification id="_fdxBMGHvEfCX_usy7k7KlA">
+        <model:dataInput id="_fdxBMWHvEfCX_usy7k7KlA" itemSubjectRef="rest-postConnectorInput"/>
+        <model:dataOutput id="_fdxBM2HvEfCX_usy7k7KlA" itemSubjectRef="rest-postConnectorOutput"/>
+        <model:inputSet id="_fdxBMmHvEfCX_usy7k7KlA">
+          <model:dataInputRefs>_fdxBMWHvEfCX_usy7k7KlA</model:dataInputRefs>
+        </model:inputSet>
+        <model:outputSet id="_fdxBNGHvEfCX_usy7k7KlA">
+          <model:dataOutputRefs>_fdxBM2HvEfCX_usy7k7KlA</model:dataOutputRefs>
+        </model:outputSet>
+      </model:ioSpecification>
+      <model:dataInputAssociation>
+        <model:targetRef>_fdxBMWHvEfCX_usy7k7KlA</model:targetRef>
+        <model:assignment>
+          <model:from xsi:type="model:tFormalExpression" id="_fdxBNWHvEfCX_usy7k7KlA" evaluatesToTypeRef="java:java.lang.String" language="http://www.w3.org/1999/XPath"><![CDATA[http://user-service:5000/api/users/create]]></model:from>
+          <model:to id="_fdxBNmHvEfCX_usy7k7KlA">getDataInput('_fdxBMWHvEfCX_usy7k7KlA')/bonitaConnector:url</model:to>
+        </model:assignment>
+        <model:assignment>
+          <model:from xsi:type="model:tFormalExpression" id="_fdxBN2HvEfCX_usy7k7KlA" evaluatesToTypeRef="java:java.lang.String" language="http://www.w3.org/1999/XPath"><![CDATA[application/json]]></model:from>
+          <model:to id="_fdxBOGHvEfCX_usy7k7KlA">getDataInput('_fdxBMWHvEfCX_usy7k7KlA')/bonitaConnector:contentType</model:to>
+        </model:assignment>
+        <model:assignment>
+          <model:from xsi:type="model:tFormalExpression" id="_fdxBOWHvEfCX_usy7k7KlA" evaluatesToTypeRef="java:java.lang.String" language="http://www.w3.org/1999/XPath"><![CDATA[UTF-8]]></model:from>
+          <model:to id="_fdxBOmHvEfCX_usy7k7KlA">getDataInput('_fdxBMWHvEfCX_usy7k7KlA')/bonitaConnector:charset</model:to>
+        </model:assignment>
+        <model:assignment>
+          <model:from xsi:type="model:tFormalExpression" id="_fdxBO2HvEfCX_usy7k7KlA" evaluatesToTypeRef="java:java.lang.String" language="http://www.w3.org/1999/XPath"><![CDATA[{
+  "email": "${email}",
+  "name": "${name}",
+  "phone": "${phone}",
+  "dob": "${dob}",
+  "cccd": "${cccd}",
+  "status": "${status}"
+}]]></model:from>
+          <model:to id="_fdxBPGHvEfCX_usy7k7KlA">getDataInput('_fdxBMWHvEfCX_usy7k7KlA')/bonitaConnector:body</model:to>
+        </model:assignment>
+        <model:assignment>
+          <model:from xsi:type="model:tFormalExpression" id="_fdxBPWHvEfCX_usy7k7KlA" evaluatesToTypeRef="java:java.lang.Boolean" language="http://www.w3.org/1999/XPath"><![CDATA[false]]></model:from>
+          <model:to id="_fdxBPmHvEfCX_usy7k7KlA">getDataInput('_fdxBMWHvEfCX_usy7k7KlA')/bonitaConnector:do_not_follow_redirect</model:to>
+        </model:assignment>
+        <model:assignment>
+          <model:from xsi:type="model:tFormalExpression" id="_fdxBP2HvEfCX_usy7k7KlA" evaluatesToTypeRef="java:java.lang.Boolean" language="http://www.w3.org/1999/XPath"><![CDATA[false]]></model:from>
+          <model:to id="_fdxBQGHvEfCX_usy7k7KlA">getDataInput('_fdxBMWHvEfCX_usy7k7KlA')/bonitaConnector:ignore_body</model:to>
+        </model:assignment>
+        <model:assignment>
+          <model:from xsi:type="model:tFormalExpression" id="_fdxBQWHvEfCX_usy7k7KlA" evaluatesToTypeRef="java:java.lang.Boolean" language="http://www.w3.org/1999/XPath"><![CDATA[true]]></model:from>
+          <model:to id="_fdxBQmHvEfCX_usy7k7KlA">getDataInput('_fdxBMWHvEfCX_usy7k7KlA')/bonitaConnector:TLS</model:to>
+        </model:assignment>
+        <model:assignment>
+          <model:from xsi:type="model:tFormalExpression" id="_fdxBQ2HvEfCX_usy7k7KlA" evaluatesToTypeRef="java:java.lang.String" language="http://www.w3.org/1999/XPath"><![CDATA[]]></model:from>
+          <model:to id="_fdxBRGHvEfCX_usy7k7KlA">getDataInput('_fdxBMWHvEfCX_usy7k7KlA')/bonitaConnector:hostname_verifier</model:to>
+        </model:assignment>
+        <model:assignment>
+          <model:from xsi:type="model:tFormalExpression" id="_fdxBRWHvEfCX_usy7k7KlA" evaluatesToTypeRef="java:java.lang.String" language="http://www.w3.org/1999/XPath"><![CDATA[]]></model:from>
+          <model:to id="_fdxBRmHvEfCX_usy7k7KlA">getDataInput('_fdxBMWHvEfCX_usy7k7KlA')/bonitaConnector:trust_store_file</model:to>
+        </model:assignment>
+        <model:assignment>
+          <model:from xsi:type="model:tFormalExpression" id="_fdxBR2HvEfCX_usy7k7KlA" evaluatesToTypeRef="java:java.lang.String" language="http://www.w3.org/1999/XPath"><![CDATA[]]></model:from>
+          <model:to id="_fdxBSGHvEfCX_usy7k7KlA">getDataInput('_fdxBMWHvEfCX_usy7k7KlA')/bonitaConnector:trust_store_password</model:to>
+        </model:assignment>
+        <model:assignment>
+          <model:from xsi:type="model:tFormalExpression" id="_fdxBSWHvEfCX_usy7k7KlA" evaluatesToTypeRef="java:java.lang.String" language="http://www.w3.org/1999/XPath"><![CDATA[]]></model:from>
+          <model:to id="_fdxBSmHvEfCX_usy7k7KlA">getDataInput('_fdxBMWHvEfCX_usy7k7KlA')/bonitaConnector:key_store_file</model:to>
+        </model:assignment>
+        <model:assignment>
+          <model:from xsi:type="model:tFormalExpression" id="_fdxBS2HvEfCX_usy7k7KlA" evaluatesToTypeRef="java:java.lang.String" language="http://www.w3.org/1999/XPath"><![CDATA[]]></model:from>
+          <model:to id="_fdxBTGHvEfCX_usy7k7KlA">getDataInput('_fdxBMWHvEfCX_usy7k7KlA')/bonitaConnector:key_store_password</model:to>
+        </model:assignment>
+        <model:assignment>
+          <model:from xsi:type="model:tFormalExpression" id="_fdxBTWHvEfCX_usy7k7KlA" evaluatesToTypeRef="java:java.lang.String" language="http://www.w3.org/1999/XPath"><![CDATA[NONE]]></model:from>
+          <model:to id="_fdxBTmHvEfCX_usy7k7KlA">getDataInput('_fdxBMWHvEfCX_usy7k7KlA')/bonitaConnector:auth_type</model:to>
+        </model:assignment>
+        <model:assignment>
+          <model:from xsi:type="model:tFormalExpression" id="_fdxBT2HvEfCX_usy7k7KlA" evaluatesToTypeRef="java:java.lang.String" language="http://www.w3.org/1999/XPath"><![CDATA[]]></model:from>
+          <model:to id="_fdxBUGHvEfCX_usy7k7KlA">getDataInput('_fdxBMWHvEfCX_usy7k7KlA')/bonitaConnector:auth_username</model:to>
+        </model:assignment>
+        <model:assignment>
+          <model:from xsi:type="model:tFormalExpression" id="_fdxBUWHvEfCX_usy7k7KlA" evaluatesToTypeRef="java:java.lang.String" language="http://www.w3.org/1999/XPath"><![CDATA[]]></model:from>
+          <model:to id="_fdxBUmHvEfCX_usy7k7KlA">getDataInput('_fdxBMWHvEfCX_usy7k7KlA')/bonitaConnector:auth_password</model:to>
+        </model:assignment>
+        <model:assignment>
+          <model:from xsi:type="model:tFormalExpression" id="_fdxBU2HvEfCX_usy7k7KlA" evaluatesToTypeRef="java:java.lang.String" language="http://www.w3.org/1999/XPath"><![CDATA[]]></model:from>
+          <model:to id="_fdxBVGHvEfCX_usy7k7KlA">getDataInput('_fdxBMWHvEfCX_usy7k7KlA')/bonitaConnector:auth_host</model:to>
+        </model:assignment>
+        <model:assignment>
+          <model:from xsi:type="model:tFormalExpression" id="_fdxBVWHvEfCX_usy7k7KlA" evaluatesToTypeRef="java:java.lang.Integer" language="http://www.w3.org/1999/XPath"><![CDATA[]]></model:from>
+          <model:to id="_fdxBVmHvEfCX_usy7k7KlA">getDataInput('_fdxBMWHvEfCX_usy7k7KlA')/bonitaConnector:auth_port</model:to>
+        </model:assignment>
+        <model:assignment>
+          <model:from xsi:type="model:tFormalExpression" id="_fdxBV2HvEfCX_usy7k7KlA" evaluatesToTypeRef="java:java.lang.String" language="http://www.w3.org/1999/XPath"><![CDATA[]]></model:from>
+          <model:to id="_fdxBWGHvEfCX_usy7k7KlA">getDataInput('_fdxBMWHvEfCX_usy7k7KlA')/bonitaConnector:auth_realm</model:to>
+        </model:assignment>
+        <model:assignment>
+          <model:from xsi:type="model:tFormalExpression" id="_fdxBWWHvEfCX_usy7k7KlA" evaluatesToTypeRef="java:java.lang.Boolean" language="http://www.w3.org/1999/XPath"><![CDATA[true]]></model:from>
+          <model:to id="_fdxBWmHvEfCX_usy7k7KlA">getDataInput('_fdxBMWHvEfCX_usy7k7KlA')/bonitaConnector:auth_preemptive</model:to>
+        </model:assignment>
+        <model:assignment>
+          <model:from xsi:type="model:tFormalExpression" id="_fdxBW2HvEfCX_usy7k7KlA" evaluatesToTypeRef="java:java.lang.String" language="http://www.w3.org/1999/XPath"><![CDATA[HTTP]]></model:from>
+          <model:to id="_fdxBXGHvEfCX_usy7k7KlA">getDataInput('_fdxBMWHvEfCX_usy7k7KlA')/bonitaConnector:proxy_protocol</model:to>
+        </model:assignment>
+        <model:assignment>
+          <model:from xsi:type="model:tFormalExpression" id="_fdxBXWHvEfCX_usy7k7KlA" evaluatesToTypeRef="java:java.lang.String" language="http://www.w3.org/1999/XPath"><![CDATA[]]></model:from>
+          <model:to id="_fdxBXmHvEfCX_usy7k7KlA">getDataInput('_fdxBMWHvEfCX_usy7k7KlA')/bonitaConnector:proxy_host</model:to>
+        </model:assignment>
+        <model:assignment>
+          <model:from xsi:type="model:tFormalExpression" id="_fdxBX2HvEfCX_usy7k7KlA" evaluatesToTypeRef="java:java.lang.Integer" language="http://www.w3.org/1999/XPath"><![CDATA[]]></model:from>
+          <model:to id="_fdxBYGHvEfCX_usy7k7KlA">getDataInput('_fdxBMWHvEfCX_usy7k7KlA')/bonitaConnector:proxy_port</model:to>
+        </model:assignment>
+        <model:assignment>
+          <model:from xsi:type="model:tFormalExpression" id="_fdxBYWHvEfCX_usy7k7KlA" evaluatesToTypeRef="java:java.lang.String" language="http://www.w3.org/1999/XPath"><![CDATA[]]></model:from>
+          <model:to id="_fdxBYmHvEfCX_usy7k7KlA">getDataInput('_fdxBMWHvEfCX_usy7k7KlA')/bonitaConnector:proxy_username</model:to>
+        </model:assignment>
+        <model:assignment>
+          <model:from xsi:type="model:tFormalExpression" id="_fdxBY2HvEfCX_usy7k7KlA" evaluatesToTypeRef="java:java.lang.String" language="http://www.w3.org/1999/XPath"><![CDATA[]]></model:from>
+          <model:to id="_fdxBZGHvEfCX_usy7k7KlA">getDataInput('_fdxBMWHvEfCX_usy7k7KlA')/bonitaConnector:proxy_password</model:to>
+        </model:assignment>
+        <model:assignment>
+          <model:from xsi:type="model:tFormalExpression" id="_fdxBZWHvEfCX_usy7k7KlA" evaluatesToTypeRef="java:java.lang.Integer" language="http://www.w3.org/1999/XPath"><![CDATA[60000]]></model:from>
+          <model:to id="_fdxBZmHvEfCX_usy7k7KlA">getDataInput('_fdxBMWHvEfCX_usy7k7KlA')/bonitaConnector:socket_timeout_ms</model:to>
+        </model:assignment>
+        <model:assignment>
+          <model:from xsi:type="model:tFormalExpression" id="_fdxBZ2HvEfCX_usy7k7KlA" evaluatesToTypeRef="java:java.lang.Integer" language="http://www.w3.org/1999/XPath"><![CDATA[60000]]></model:from>
+          <model:to id="_fdxBaGHvEfCX_usy7k7KlA">getDataInput('_fdxBMWHvEfCX_usy7k7KlA')/bonitaConnector:connection_timeout_ms</model:to>
+        </model:assignment>
+        <model:assignment>
+          <model:from xsi:type="model:tFormalExpression" id="_fdxBaWHvEfCX_usy7k7KlA" evaluatesToTypeRef="java:java.lang.String" language="http://www.w3.org/1999/XPath"><![CDATA[DEFAULT]]></model:from>
+          <model:to id="_fdxBamHvEfCX_usy7k7KlA">getDataInput('_fdxBMWHvEfCX_usy7k7KlA')/bonitaConnector:trust_strategy</model:to>
+        </model:assignment>
+      </model:dataInputAssociation>
+      <model:dataOutputAssociation>
+        <model:targetRef>_fdxBM2HvEfCX_usy7k7KlA</model:targetRef>
+        <model:assignment>
+          <model:from id="_fdxBa2HvEfCX_usy7k7KlA">getDataOutput('_fdxBMWHvEfCX_usy7k7KlA')/bonitaConnector:bodyAsString</model:from>
+        </model:assignment>
+        <model:assignment>
+          <model:from id="_fdxBbGHvEfCX_usy7k7KlA">getDataOutput('_fdxBMWHvEfCX_usy7k7KlA')/bonitaConnector:bodyAsObject</model:from>
+        </model:assignment>
+        <model:assignment>
+          <model:from id="_fdxBbWHvEfCX_usy7k7KlA">getDataOutput('_fdxBMWHvEfCX_usy7k7KlA')/bonitaConnector:headers</model:from>
+        </model:assignment>
+        <model:assignment>
+          <model:from id="_fdxBbmHvEfCX_usy7k7KlA">getDataOutput('_fdxBMWHvEfCX_usy7k7KlA')/bonitaConnector:status_code</model:from>
+        </model:assignment>
+        <model:assignment>
+          <model:from id="_fdxBb2HvEfCX_usy7k7KlA">getDataOutput('_fdxBMWHvEfCX_usy7k7KlA')/bonitaConnector:status_message</model:from>
+        </model:assignment>
+      </model:dataOutputAssociation>
+    </model:serviceTask>
+    <model:endEvent id="_QTOxIGF1EfCNRPlivZqhfQ" name="End">
+      <model:terminateEventDefinition id="_fdxBcWHvEfCX_usy7k7KlA"/>
+    </model:endEvent>
+    <model:parallelGateway id="_QAJ-8GGHEfCNRPlivZqhfQ" name="OTP = false => end"/>
+    <model:endEvent id="_TaZRMGGHEfCNRPlivZqhfQ" name="End OTP">
+      <model:terminateEventDefinition id="_fdxBdGHvEfCX_usy7k7KlA"/>
+    </model:endEvent>
+    <model:serviceTask id="_s_8vEGGHEfCNRPlivZqhfQ" name="Check BlackList" implementation="BonitaConnector" operationRef="Execrest-post">
+      <model:ioSpecification id="_fd3u4GHvEfCX_usy7k7KlA">
+        <model:dataInput id="_fd3u4WHvEfCX_usy7k7KlA" itemSubjectRef="rest-postConnectorInput"/>
+        <model:dataOutput id="_fd3u42HvEfCX_usy7k7KlA" itemSubjectRef="rest-postConnectorOutput"/>
+        <model:inputSet id="_fd3u4mHvEfCX_usy7k7KlA">
+          <model:dataInputRefs>_fd3u4WHvEfCX_usy7k7KlA</model:dataInputRefs>
+        </model:inputSet>
+        <model:outputSet id="_fd3u5GHvEfCX_usy7k7KlA">
+          <model:dataOutputRefs>_fd3u42HvEfCX_usy7k7KlA</model:dataOutputRefs>
+        </model:outputSet>
+      </model:ioSpecification>
+      <model:dataInputAssociation>
+        <model:targetRef>_fd3u4WHvEfCX_usy7k7KlA</model:targetRef>
+        <model:assignment>
+          <model:from xsi:type="model:tFormalExpression" id="_fd3u5WHvEfCX_usy7k7KlA" evaluatesToTypeRef="java:java.lang.String" language="http://www.w3.org/1999/XPath"><![CDATA[http://user-service:5000/api/users/check-blacklist]]></model:from>
+          <model:to id="_fd3u5mHvEfCX_usy7k7KlA">getDataInput('_fd3u4WHvEfCX_usy7k7KlA')/bonitaConnector:url</model:to>
+        </model:assignment>
+        <model:assignment>
+          <model:from xsi:type="model:tFormalExpression" id="_fd3u52HvEfCX_usy7k7KlA" evaluatesToTypeRef="java:java.lang.String" language="http://www.w3.org/1999/XPath"><![CDATA[application/json]]></model:from>
+          <model:to id="_fd3u6GHvEfCX_usy7k7KlA">getDataInput('_fd3u4WHvEfCX_usy7k7KlA')/bonitaConnector:contentType</model:to>
+        </model:assignment>
+        <model:assignment>
+          <model:from xsi:type="model:tFormalExpression" id="_fd3u6WHvEfCX_usy7k7KlA" evaluatesToTypeRef="java:java.lang.String" language="http://www.w3.org/1999/XPath"><![CDATA[UTF-8]]></model:from>
+          <model:to id="_fd3u6mHvEfCX_usy7k7KlA">getDataInput('_fd3u4WHvEfCX_usy7k7KlA')/bonitaConnector:charset</model:to>
+        </model:assignment>
+        <model:assignment>
+          <model:from xsi:type="model:tFormalExpression" id="_fd3u62HvEfCX_usy7k7KlA" evaluatesToTypeRef="java:java.lang.String" language="http://www.w3.org/1999/XPath"><![CDATA[{
+  "cccd": "${cccd}"
+}]]></model:from>
+          <model:to id="_fd3u7GHvEfCX_usy7k7KlA">getDataInput('_fd3u4WHvEfCX_usy7k7KlA')/bonitaConnector:body</model:to>
+        </model:assignment>
+        <model:assignment>
+          <model:from xsi:type="model:tFormalExpression" id="_fd3u7WHvEfCX_usy7k7KlA" evaluatesToTypeRef="java:java.lang.Boolean" language="http://www.w3.org/1999/XPath"><![CDATA[false]]></model:from>
+          <model:to id="_fd3u7mHvEfCX_usy7k7KlA">getDataInput('_fd3u4WHvEfCX_usy7k7KlA')/bonitaConnector:do_not_follow_redirect</model:to>
+        </model:assignment>
+        <model:assignment>
+          <model:from xsi:type="model:tFormalExpression" id="_fd3u72HvEfCX_usy7k7KlA" evaluatesToTypeRef="java:java.lang.Boolean" language="http://www.w3.org/1999/XPath"><![CDATA[false]]></model:from>
+          <model:to id="_fd3u8GHvEfCX_usy7k7KlA">getDataInput('_fd3u4WHvEfCX_usy7k7KlA')/bonitaConnector:ignore_body</model:to>
+        </model:assignment>
+        <model:assignment>
+          <model:from xsi:type="model:tFormalExpression" id="_fd3u8WHvEfCX_usy7k7KlA" evaluatesToTypeRef="java:java.lang.Boolean" language="http://www.w3.org/1999/XPath"><![CDATA[true]]></model:from>
+          <model:to id="_fd3u8mHvEfCX_usy7k7KlA">getDataInput('_fd3u4WHvEfCX_usy7k7KlA')/bonitaConnector:TLS</model:to>
+        </model:assignment>
+        <model:assignment>
+          <model:from xsi:type="model:tFormalExpression" id="_fd3u82HvEfCX_usy7k7KlA" evaluatesToTypeRef="java:java.lang.String" language="http://www.w3.org/1999/XPath"><![CDATA[]]></model:from>
+          <model:to id="_fd3u9GHvEfCX_usy7k7KlA">getDataInput('_fd3u4WHvEfCX_usy7k7KlA')/bonitaConnector:hostname_verifier</model:to>
+        </model:assignment>
+        <model:assignment>
+          <model:from xsi:type="model:tFormalExpression" id="_fd3u9WHvEfCX_usy7k7KlA" evaluatesToTypeRef="java:java.lang.String" language="http://www.w3.org/1999/XPath"><![CDATA[]]></model:from>
+          <model:to id="_fd3u9mHvEfCX_usy7k7KlA">getDataInput('_fd3u4WHvEfCX_usy7k7KlA')/bonitaConnector:trust_store_file</model:to>
+        </model:assignment>
+        <model:assignment>
+          <model:from xsi:type="model:tFormalExpression" id="_fd3u92HvEfCX_usy7k7KlA" evaluatesToTypeRef="java:java.lang.String" language="http://www.w3.org/1999/XPath"><![CDATA[]]></model:from>
+          <model:to id="_fd3u-GHvEfCX_usy7k7KlA">getDataInput('_fd3u4WHvEfCX_usy7k7KlA')/bonitaConnector:trust_store_password</model:to>
+        </model:assignment>
+        <model:assignment>
+          <model:from xsi:type="model:tFormalExpression" id="_fd3u-WHvEfCX_usy7k7KlA" evaluatesToTypeRef="java:java.lang.String" language="http://www.w3.org/1999/XPath"><![CDATA[]]></model:from>
+          <model:to id="_fd3u-mHvEfCX_usy7k7KlA">getDataInput('_fd3u4WHvEfCX_usy7k7KlA')/bonitaConnector:key_store_file</model:to>
+        </model:assignment>
+        <model:assignment>
+          <model:from xsi:type="model:tFormalExpression" id="_fd3u-2HvEfCX_usy7k7KlA" evaluatesToTypeRef="java:java.lang.String" language="http://www.w3.org/1999/XPath"><![CDATA[]]></model:from>
+          <model:to id="_fd3u_GHvEfCX_usy7k7KlA">getDataInput('_fd3u4WHvEfCX_usy7k7KlA')/bonitaConnector:key_store_password</model:to>
+        </model:assignment>
+        <model:assignment>
+          <model:from xsi:type="model:tFormalExpression" id="_fd3u_WHvEfCX_usy7k7KlA" evaluatesToTypeRef="java:java.lang.String" language="http://www.w3.org/1999/XPath"><![CDATA[NONE]]></model:from>
+          <model:to id="_fd3u_mHvEfCX_usy7k7KlA">getDataInput('_fd3u4WHvEfCX_usy7k7KlA')/bonitaConnector:auth_type</model:to>
+        </model:assignment>
+        <model:assignment>
+          <model:from xsi:type="model:tFormalExpression" id="_fd3u_2HvEfCX_usy7k7KlA" evaluatesToTypeRef="java:java.lang.String" language="http://www.w3.org/1999/XPath"><![CDATA[]]></model:from>
+          <model:to id="_fd3vAGHvEfCX_usy7k7KlA">getDataInput('_fd3u4WHvEfCX_usy7k7KlA')/bonitaConnector:auth_username</model:to>
+        </model:assignment>
+        <model:assignment>
+          <model:from xsi:type="model:tFormalExpression" id="_fd3vAWHvEfCX_usy7k7KlA" evaluatesToTypeRef="java:java.lang.String" language="http://www.w3.org/1999/XPath"><![CDATA[]]></model:from>
+          <model:to id="_fd3vAmHvEfCX_usy7k7KlA">getDataInput('_fd3u4WHvEfCX_usy7k7KlA')/bonitaConnector:auth_password</model:to>
+        </model:assignment>
+        <model:assignment>
+          <model:from xsi:type="model:tFormalExpression" id="_fd3vA2HvEfCX_usy7k7KlA" evaluatesToTypeRef="java:java.lang.String" language="http://www.w3.org/1999/XPath"><![CDATA[]]></model:from>
+          <model:to id="_fd3vBGHvEfCX_usy7k7KlA">getDataInput('_fd3u4WHvEfCX_usy7k7KlA')/bonitaConnector:auth_host</model:to>
+        </model:assignment>
+        <model:assignment>
+          <model:from xsi:type="model:tFormalExpression" id="_fd3vBWHvEfCX_usy7k7KlA" evaluatesToTypeRef="java:java.lang.Integer" language="http://www.w3.org/1999/XPath"><![CDATA[]]></model:from>
+          <model:to id="_fd3vBmHvEfCX_usy7k7KlA">getDataInput('_fd3u4WHvEfCX_usy7k7KlA')/bonitaConnector:auth_port</model:to>
+        </model:assignment>
+        <model:assignment>
+          <model:from xsi:type="model:tFormalExpression" id="_fd3vB2HvEfCX_usy7k7KlA" evaluatesToTypeRef="java:java.lang.String" language="http://www.w3.org/1999/XPath"><![CDATA[]]></model:from>
+          <model:to id="_fd3vCGHvEfCX_usy7k7KlA">getDataInput('_fd3u4WHvEfCX_usy7k7KlA')/bonitaConnector:auth_realm</model:to>
+        </model:assignment>
+        <model:assignment>
+          <model:from xsi:type="model:tFormalExpression" id="_fd3vCWHvEfCX_usy7k7KlA" evaluatesToTypeRef="java:java.lang.Boolean" language="http://www.w3.org/1999/XPath"><![CDATA[true]]></model:from>
+          <model:to id="_fd3vCmHvEfCX_usy7k7KlA">getDataInput('_fd3u4WHvEfCX_usy7k7KlA')/bonitaConnector:auth_preemptive</model:to>
+        </model:assignment>
+        <model:assignment>
+          <model:from xsi:type="model:tFormalExpression" id="_fd3vC2HvEfCX_usy7k7KlA" evaluatesToTypeRef="java:java.lang.String" language="http://www.w3.org/1999/XPath"><![CDATA[HTTP]]></model:from>
+          <model:to id="_fd3vDGHvEfCX_usy7k7KlA">getDataInput('_fd3u4WHvEfCX_usy7k7KlA')/bonitaConnector:proxy_protocol</model:to>
+        </model:assignment>
+        <model:assignment>
+          <model:from xsi:type="model:tFormalExpression" id="_fd3vDWHvEfCX_usy7k7KlA" evaluatesToTypeRef="java:java.lang.String" language="http://www.w3.org/1999/XPath"><![CDATA[]]></model:from>
+          <model:to id="_fd3vDmHvEfCX_usy7k7KlA">getDataInput('_fd3u4WHvEfCX_usy7k7KlA')/bonitaConnector:proxy_host</model:to>
+        </model:assignment>
+        <model:assignment>
+          <model:from xsi:type="model:tFormalExpression" id="_fd3vD2HvEfCX_usy7k7KlA" evaluatesToTypeRef="java:java.lang.Integer" language="http://www.w3.org/1999/XPath"><![CDATA[]]></model:from>
+          <model:to id="_fd3vEGHvEfCX_usy7k7KlA">getDataInput('_fd3u4WHvEfCX_usy7k7KlA')/bonitaConnector:proxy_port</model:to>
+        </model:assignment>
+        <model:assignment>
+          <model:from xsi:type="model:tFormalExpression" id="_fd3vEWHvEfCX_usy7k7KlA" evaluatesToTypeRef="java:java.lang.String" language="http://www.w3.org/1999/XPath"><![CDATA[]]></model:from>
+          <model:to id="_fd3vEmHvEfCX_usy7k7KlA">getDataInput('_fd3u4WHvEfCX_usy7k7KlA')/bonitaConnector:proxy_username</model:to>
+        </model:assignment>
+        <model:assignment>
+          <model:from xsi:type="model:tFormalExpression" id="_fd3vE2HvEfCX_usy7k7KlA" evaluatesToTypeRef="java:java.lang.String" language="http://www.w3.org/1999/XPath"><![CDATA[]]></model:from>
+          <model:to id="_fd3vFGHvEfCX_usy7k7KlA">getDataInput('_fd3u4WHvEfCX_usy7k7KlA')/bonitaConnector:proxy_password</model:to>
+        </model:assignment>
+        <model:assignment>
+          <model:from xsi:type="model:tFormalExpression" id="_fd3vFWHvEfCX_usy7k7KlA" evaluatesToTypeRef="java:java.lang.Integer" language="http://www.w3.org/1999/XPath"><![CDATA[60000]]></model:from>
+          <model:to id="_fd3vFmHvEfCX_usy7k7KlA">getDataInput('_fd3u4WHvEfCX_usy7k7KlA')/bonitaConnector:socket_timeout_ms</model:to>
+        </model:assignment>
+        <model:assignment>
+          <model:from xsi:type="model:tFormalExpression" id="_fd3vF2HvEfCX_usy7k7KlA" evaluatesToTypeRef="java:java.lang.Integer" language="http://www.w3.org/1999/XPath"><![CDATA[60000]]></model:from>
+          <model:to id="_fd3vGGHvEfCX_usy7k7KlA">getDataInput('_fd3u4WHvEfCX_usy7k7KlA')/bonitaConnector:connection_timeout_ms</model:to>
+        </model:assignment>
+        <model:assignment>
+          <model:from xsi:type="model:tFormalExpression" id="_fd3vGWHvEfCX_usy7k7KlA" evaluatesToTypeRef="java:java.lang.String" language="http://www.w3.org/1999/XPath"><![CDATA[DEFAULT]]></model:from>
+          <model:to id="_fd3vGmHvEfCX_usy7k7KlA">getDataInput('_fd3u4WHvEfCX_usy7k7KlA')/bonitaConnector:trust_strategy</model:to>
+        </model:assignment>
+      </model:dataInputAssociation>
+      <model:dataOutputAssociation>
+        <model:targetRef>_fd3u42HvEfCX_usy7k7KlA</model:targetRef>
+        <model:assignment>
+          <model:from id="_fd3vG2HvEfCX_usy7k7KlA">getDataOutput('_fd3u4WHvEfCX_usy7k7KlA')/bonitaConnector:bodyAsString</model:from>
+        </model:assignment>
+        <model:assignment>
+          <model:from id="_fd3vHGHvEfCX_usy7k7KlA">getDataOutput('_fd3u4WHvEfCX_usy7k7KlA')/bonitaConnector:bodyAsObject</model:from>
+        </model:assignment>
+        <model:assignment>
+          <model:from id="_fd3vHWHvEfCX_usy7k7KlA">getDataOutput('_fd3u4WHvEfCX_usy7k7KlA')/bonitaConnector:headers</model:from>
+        </model:assignment>
+        <model:assignment>
+          <model:from id="_fd3vHmHvEfCX_usy7k7KlA">getDataOutput('_fd3u4WHvEfCX_usy7k7KlA')/bonitaConnector:status_code</model:from>
+        </model:assignment>
+        <model:assignment>
+          <model:from id="_fd3vH2HvEfCX_usy7k7KlA">getDataOutput('_fd3u4WHvEfCX_usy7k7KlA')/bonitaConnector:status_message</model:from>
+        </model:assignment>
+        <model:assignment>
+          <model:from xsi:type="model:tFormalExpression" id="_fd3vIGHvEfCX_usy7k7KlA" evaluatesToTypeRef="java:java.lang.Boolean"><![CDATA[bodyAsObject.isBlacklisted]]></model:from>
+          <model:to xsi:type="model:tFormalExpression" id="_fd3vIWHvEfCX_usy7k7KlA" evaluatesToTypeRef="java:java.lang.Boolean" language="http://www.w3.org/1999/XPath">getDataObject('_J7WMkGF2EfCNRPlivZqhfQ')</model:to>
+        </model:assignment>
+      </model:dataOutputAssociation>
+    </model:serviceTask>
+    <model:parallelGateway id="_zaUxgGGHEfCNRPlivZqhfQ" name="Gateway BlackList = true"/>
+    <model:endEvent id="_2UWSoGGHEfCNRPlivZqhfQ" name="End BlackList">
+      <model:terminateEventDefinition id="_fd3vJGHvEfCX_usy7k7KlA"/>
+    </model:endEvent>
+    <model:sequenceFlow id="_toJ5MGF0EfCNRPlivZqhfQ" name="" sourceRef="_aFlRc2F0EfCNRPlivZqhfQ" targetRef="_kmgSgGF0EfCNRPlivZqhfQ"/>
+    <model:sequenceFlow id="_uW7qwGF0EfCNRPlivZqhfQ" name="OTP true" sourceRef="_kmgSgGF0EfCNRPlivZqhfQ" targetRef="_qDffoGF0EfCNRPlivZqhfQ">
+      <model:conditionExpression xsi:type="model:tFormalExpression" id="_fd4V8GHvEfCX_usy7k7KlA" evaluatesToTypeRef="java:java.lang.Boolean"><![CDATA[otpVerified == true]]></model:conditionExpression>
+    </model:sequenceFlow>
+    <model:sequenceFlow id="_St6q4GF1EfCNRPlivZqhfQ" name="" sourceRef="_LndlkGF1EfCNRPlivZqhfQ" targetRef="_QTOxIGF1EfCNRPlivZqhfQ"/>
+    <model:sequenceFlow id="_QAKmB2GHEfCNRPlivZqhfQ" name="OTP false" sourceRef="_kmgSgGF0EfCNRPlivZqhfQ" targetRef="_QAJ-8GGHEfCNRPlivZqhfQ">
+      <model:conditionExpression xsi:type="model:tFormalExpression" id="_fd4V8WHvEfCX_usy7k7KlA" evaluatesToTypeRef="java:java.lang.Boolean"><![CDATA[otpVerified == flase]]></model:conditionExpression>
+    </model:sequenceFlow>
+    <model:sequenceFlow id="_TaZ4QWGHEfCNRPlivZqhfQ" name="" sourceRef="_QAJ-8GGHEfCNRPlivZqhfQ" targetRef="_TaZRMGGHEfCNRPlivZqhfQ"/>
+    <model:sequenceFlow id="_xKxJsGGHEfCNRPlivZqhfQ" name="blacklisted = fasle" sourceRef="_s_8vEGGHEfCNRPlivZqhfQ" targetRef="_9tPGYGF0EfCNRPlivZqhfQ">
+      <model:conditionExpression xsi:type="model:tFormalExpression" id="_fd4V8mHvEfCX_usy7k7KlA" evaluatesToTypeRef="java:java.lang.Boolean"><![CDATA[blacklisted == false]]></model:conditionExpression>
+    </model:sequenceFlow>
+    <model:sequenceFlow id="_zaVYlGGHEfCNRPlivZqhfQ" name="blacklisted = true" sourceRef="_s_8vEGGHEfCNRPlivZqhfQ" targetRef="_zaUxgGGHEfCNRPlivZqhfQ">
+      <model:conditionExpression xsi:type="model:tFormalExpression" id="_fd4V82HvEfCX_usy7k7KlA" evaluatesToTypeRef="java:java.lang.Boolean"><![CDATA[blacklisted == true]]></model:conditionExpression>
+    </model:sequenceFlow>
+    <model:sequenceFlow id="_2UW5sGGHEfCNRPlivZqhfQ" name="" sourceRef="_zaUxgGGHEfCNRPlivZqhfQ" targetRef="_2UWSoGGHEfCNRPlivZqhfQ"/>
+    <model:sequenceFlow id="_tOot4GHgEfCoH4zUQmh6VQ" name="" sourceRef="_qDffoGF0EfCNRPlivZqhfQ" targetRef="_s_8vEGGHEfCNRPlivZqhfQ"/>
+    <model:sequenceFlow id="_yjgg0GHgEfCoH4zUQmh6VQ" name="" sourceRef="_9tPGYGF0EfCNRPlivZqhfQ" targetRef="_3yPHkGF0EfCNRPlivZqhfQ"/>
+    <model:sequenceFlow id="_y_xmEGHgEfCoH4zUQmh6VQ" name="" sourceRef="_3yPHkGF0EfCNRPlivZqhfQ" targetRef="_LndlkGF1EfCNRPlivZqhfQ"/>
+  </model:process>
+  <model:itemDefinition id="__xaIIGF1EfCNRPlivZqhfQ" structureRef="java:java.lang.String">
+    <model:documentation>Nhập từ frontend</model:documentation>
+  </model:itemDefinition>
+  <model:itemDefinition id="_BIlWcGF2EfCNRPlivZqhfQ" structureRef="java:java.lang.String">
+    <model:documentation>Nhập từ frontend&#xD;
+</model:documentation>
+  </model:itemDefinition>
+  <model:itemDefinition id="_CcEXkGF2EfCNRPlivZqhfQ" structureRef="java:java.lang.String">
+    <model:documentation>Nhập từ frontend</model:documentation>
+  </model:itemDefinition>
+  <model:itemDefinition id="_El5x4GF2EfCNRPlivZqhfQ" structureRef="java:java.lang.String">
+    <model:documentation>Nhập từ frontend</model:documentation>
+  </model:itemDefinition>
+  <model:itemDefinition id="_HxaEkGF2EfCNRPlivZqhfQ" structureRef="java:java.lang.Boolean">
+    <model:documentation>Mặc định false, dùng cho gateway</model:documentation>
+  </model:itemDefinition>
+  <model:itemDefinition id="_J7WMkGF2EfCNRPlivZqhfQ" structureRef="java:java.lang.Boolean">
+    <model:documentation>Dùng để kiểm tra trong DB</model:documentation>
+  </model:itemDefinition>
+  <model:itemDefinition id="_wAq4oGGIEfCNRPlivZqhfQ" structureRef="java:java.lang.String">
+    <model:documentation>kiểm tra số cccd trong blacklist</model:documentation>
+  </model:itemDefinition>
+  <model:itemDefinition id="_UgNF4GGLEfCNRPlivZqhfQ" structureRef="java:java.lang.String">
+    <model:documentation>số điện thoại</model:documentation>
+  </model:itemDefinition>
+  <model:itemDefinition id="_gQMiIGGLEfCNRPlivZqhfQ" structureRef="java:java.util.Date">
+    <model:documentation>ngày tháng năm sinh</model:documentation>
+  </model:itemDefinition>
+  <model:itemDefinition id="_ln_tQGGLEfCNRPlivZqhfQ" structureRef="java:java.lang.String">
+    <model:documentation>quê quán</model:documentation>
+  </model:itemDefinition>
+  <model:itemDefinition id="rest-postConnectorInput" structureRef="bonitaConnector:rest-postInputType"/>
+  <model:message id="rest-postConnectorMessageInput" itemRef="rest-postConnectorInput"/>
+  <model:itemDefinition id="rest-postConnectorOutput" structureRef="bonitaConnector:rest-postOutputType"/>
+  <model:message id="rest-postConnectorMessageOutput" itemRef="rest-postConnectorOutput"/>
+  <model:interface id="rest-post_Bonita_Connector_Interface" name="rest-post_Bonita_Connector_Interface">
+    <model:operation id="Execrest-post" name="Execrest-post">
+      <model:inMessageRef>rest-postConnectorMessageInput</model:inMessageRef>
+      <model:outMessageRef>rest-postConnectorMessageOutput</model:outMessageRef>
+    </model:operation>
+  </model:interface>
+  <model:itemDefinition id="_Q9cYgGGFEfCNRPlivZqhfQ" structureRef="java:java.lang.Integer"/>
+  <di:BPMNDiagram name="CreateAccountBank_Diagram">
+    <di:BPMNPlane id="plane__aFlRcGF0EfCNRPlivZqhfQ" bpmnElement="_aFlRcGF0EfCNRPlivZqhfQ">
+      <di:BPMNShape id="_aFlRpmF0EfCNRPlivZqhfQ" bpmnElement="_fdab4GHvEfCX_usy7k7KlA" isHorizontal="true">
+        <dc:Bounds height="323.0" width="1960.0" x="0.0" y="0.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_aFlRqWF0EfCNRPlivZqhfQ" bpmnElement="_aFlRcmF0EfCNRPlivZqhfQ" isHorizontal="true">
+        <dc:Bounds height="323.0" width="1930.0" x="30.0" y="0.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_aFlRr2F0EfCNRPlivZqhfQ" bpmnElement="_aFlRc2F0EfCNRPlivZqhfQ">
+        <dc:Bounds height="30.0" width="30.0" x="90.0" y="68.0"/>
+        <di:BPMNLabel id="_fdbC8WHvEfCX_usy7k7KlA" labelStyle="_fdbC8GHvEfCX_usy7k7KlA">
+          <dc:Bounds height="17.0" width="44.0" x="83.0" y="103.0"/>
+        </di:BPMNLabel>
+      </di:BPMNShape>
+      <di:BPMNShape id="_kmqDgGF0EfCNRPlivZqhfQ" bpmnElement="_kmgSgGF0EfCNRPlivZqhfQ">
+        <dc:Bounds height="78.0" width="158.0" x="163.0" y="59.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_qDhU0GF0EfCNRPlivZqhfQ" bpmnElement="_qDffoGF0EfCNRPlivZqhfQ">
+        <dc:Bounds height="43.0" width="43.0" x="415.0" y="68.0"/>
+        <di:BPMNLabel id="_fdqTx2HvEfCX_usy7k7KlA" labelStyle="_fdbC8GHvEfCX_usy7k7KlA">
+          <dc:Bounds height="17.0" width="74.0" x="399.0" y="116.0"/>
+        </di:BPMNLabel>
+      </di:BPMNShape>
+      <di:BPMNShape id="_3ySK4GF0EfCNRPlivZqhfQ" bpmnElement="_3yPHkGF0EfCNRPlivZqhfQ">
+        <dc:Bounds height="69.0" width="139.0" x="1003.0" y="62.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_9tQUgGF0EfCNRPlivZqhfQ" bpmnElement="_9tPGYGF0EfCNRPlivZqhfQ">
+        <dc:Bounds height="43.0" width="43.0" x="863.0" y="68.0"/>
+        <di:BPMNLabel id="_fdq6kGHvEfCX_usy7k7KlA" labelStyle="_fdbC8GHvEfCX_usy7k7KlA">
+          <dc:Bounds height="17.0" width="185.0" x="792.0" y="122.0"/>
+        </di:BPMNLabel>
+      </di:BPMNShape>
+      <di:BPMNShape id="_LneMoGF1EfCNRPlivZqhfQ" bpmnElement="_LndlkGF1EfCNRPlivZqhfQ">
+        <dc:Bounds height="69.0" width="138.0" x="1199.0" y="63.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_QTPYM2F1EfCNRPlivZqhfQ" bpmnElement="_QTOxIGF1EfCNRPlivZqhfQ">
+        <dc:Bounds height="30.0" width="30.0" x="1439.0" y="75.0"/>
+        <di:BPMNLabel id="_fdxBcmHvEfCX_usy7k7KlA" labelStyle="_fdbC8GHvEfCX_usy7k7KlA">
+          <dc:Bounds height="17.0" width="22.0" x="1443.0" y="110.0"/>
+        </di:BPMNLabel>
+      </di:BPMNShape>
+      <di:BPMNShape id="_QAKmA2GHEfCNRPlivZqhfQ" bpmnElement="_QAJ-8GGHEfCNRPlivZqhfQ">
+        <dc:Bounds height="43.0" width="43.0" x="219.0" y="180.0"/>
+        <di:BPMNLabel id="_fdxBc2HvEfCX_usy7k7KlA" labelStyle="_fdbC8GHvEfCX_usy7k7KlA">
+          <dc:Bounds height="17.0" width="133.0" x="174.0" y="228.0"/>
+        </di:BPMNLabel>
+      </di:BPMNShape>
+      <di:BPMNShape id="_TaZRNGGHEfCNRPlivZqhfQ" bpmnElement="_TaZRMGGHEfCNRPlivZqhfQ">
+        <dc:Bounds height="30.0" width="30.0" x="359.0" y="194.0"/>
+        <di:BPMNLabel id="_fdxBdWHvEfCX_usy7k7KlA" labelStyle="_fdbC8GHvEfCX_usy7k7KlA">
+          <dc:Bounds height="17.0" width="51.0" x="349.0" y="229.0"/>
+        </di:BPMNLabel>
+      </di:BPMNShape>
+      <di:BPMNShape id="_s_99MGGHEfCNRPlivZqhfQ" bpmnElement="_s_8vEGGHEfCNRPlivZqhfQ">
+        <dc:Bounds height="72.0" width="144.0" x="527.0" y="54.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_zaVYkGGHEfCNRPlivZqhfQ" bpmnElement="_zaUxgGGHEfCNRPlivZqhfQ">
+        <dc:Bounds height="43.0" width="43.0" x="611.0" y="207.0"/>
+        <di:BPMNLabel id="_fd3vI2HvEfCX_usy7k7KlA" labelStyle="_fdbC8GHvEfCX_usy7k7KlA">
+          <dc:Bounds height="17.0" width="178.0" x="543.0" y="255.0"/>
+        </di:BPMNLabel>
+      </di:BPMNShape>
+      <di:BPMNShape id="_2UWSpGGHEfCNRPlivZqhfQ" bpmnElement="_2UWSoGGHEfCNRPlivZqhfQ">
+        <dc:Bounds height="30.0" width="30.0" x="807.0" y="214.0"/>
+        <di:BPMNLabel id="_fd3vJWHvEfCX_usy7k7KlA" labelStyle="_fdbC8GHvEfCX_usy7k7KlA">
+          <dc:Bounds height="17.0" width="96.0" x="774.0" y="249.0"/>
+        </di:BPMNLabel>
+      </di:BPMNShape>
+      <di:BPMNEdge id="_toLuYGF0EfCNRPlivZqhfQ" bpmnElement="_toJ5MGF0EfCNRPlivZqhfQ">
+        <di_1:waypoint x="113.0" y="95.0"/>
+        <di_1:waypoint x="163.0" y="95.0"/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_uW8R0GF0EfCNRPlivZqhfQ" bpmnElement="_uW7qwGF0EfCNRPlivZqhfQ">
+        <di_1:waypoint x="321.0" y="90.0"/>
+        <di_1:waypoint x="415.0" y="90.0"/>
+        <di:BPMNLabel>
+          <dc:Bounds height="17.0" width="59.0" x="339.0" y="72.0"/>
+        </di:BPMNLabel>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_St7R8GF1EfCNRPlivZqhfQ" bpmnElement="_St6q4GF1EfCNRPlivZqhfQ">
+        <di_1:waypoint x="1337.0" y="90.0"/>
+        <di_1:waypoint x="1439.0" y="90.0"/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_QALNEGGHEfCNRPlivZqhfQ" bpmnElement="_QAKmB2GHEfCNRPlivZqhfQ">
+        <di_1:waypoint x="241.0" y="137.0"/>
+        <di_1:waypoint x="241.0" y="180.0"/>
+        <di:BPMNLabel>
+          <dc:Bounds height="17.0" width="66.0" x="218.0" y="150.0"/>
+        </di:BPMNLabel>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_TaZ4RGGHEfCNRPlivZqhfQ" bpmnElement="_TaZ4QWGHEfCNRPlivZqhfQ">
+        <di_1:waypoint x="258.0" y="205.0"/>
+        <di_1:waypoint x="359.0" y="205.0"/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_xKxwwGGHEfCNRPlivZqhfQ" bpmnElement="_xKxJsGGHEfCNRPlivZqhfQ">
+        <di_1:waypoint x="671.0" y="90.0"/>
+        <di_1:waypoint x="863.0" y="90.0"/>
+        <di:BPMNLabel>
+          <dc:Bounds height="17.0" width="140.0" x="697.0" y="72.0"/>
+        </di:BPMNLabel>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_zaVYl2GHEfCNRPlivZqhfQ" bpmnElement="_zaVYlGGHEfCNRPlivZqhfQ">
+        <di_1:waypoint x="615.0" y="126.0"/>
+        <di_1:waypoint x="615.0" y="224.0"/>
+        <di:BPMNLabel>
+          <dc:Bounds height="17.0" width="133.0" x="559.0" y="167.0"/>
+        </di:BPMNLabel>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_2UW5s2GHEfCNRPlivZqhfQ" bpmnElement="_2UW5sGGHEfCNRPlivZqhfQ">
+        <di_1:waypoint x="654.0" y="228.0"/>
+        <di_1:waypoint x="807.0" y="228.0"/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_tO7o0GHgEfCoH4zUQmh6VQ" bpmnElement="_tOot4GHgEfCoH4zUQmh6VQ">
+        <di_1:waypoint x="456.0" y="88.0"/>
+        <di_1:waypoint x="527.0" y="88.0"/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_yjhH4GHgEfCoH4zUQmh6VQ" bpmnElement="_yjgg0GHgEfCoH4zUQmh6VQ">
+        <di_1:waypoint x="904.0" y="91.0"/>
+        <di_1:waypoint x="1003.0" y="91.0"/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_y_y0MGHgEfCoH4zUQmh6VQ" bpmnElement="_y_xmEGHgEfCoH4zUQmh6VQ">
+        <di_1:waypoint x="1142.0" y="92.0"/>
+        <di_1:waypoint x="1199.0" y="92.0"/>
+      </di:BPMNEdge>
+    </di:BPMNPlane>
+    <di:BPMNLabelStyle id="_fdbC8GHvEfCX_usy7k7KlA">
+      <dc:Font isBold="false" isItalic="false" isStrikeThrough="false" isUnderline="false" name="Segoe UI" size="9.0"/>
+    </di:BPMNLabelStyle>
+  </di:BPMNDiagram>
+</model:definitions>

@@ -1,0 +1,17 @@
+D:\ThucTap\bank-registration-system\message-service\publish\appsettings.json
+D:\ThucTap\bank-registration-system\message-service\publish\message-service.exe
+D:\ThucTap\bank-registration-system\message-service\publish\message-service.dll
+D:\ThucTap\bank-registration-system\message-service\publish\message-service.deps.json
+D:\ThucTap\bank-registration-system\message-service\publish\message-service.runtimeconfig.json
+D:\ThucTap\bank-registration-system\message-service\publish\message-service.pdb
+D:\ThucTap\bank-registration-system\message-service\publish\Microsoft.Extensions.DependencyModel.dll
+D:\ThucTap\bank-registration-system\message-service\publish\RabbitMQ.Client.dll
+D:\ThucTap\bank-registration-system\message-service\publish\Serilog.dll
+D:\ThucTap\bank-registration-system\message-service\publish\Serilog.AspNetCore.dll
+D:\ThucTap\bank-registration-system\message-service\publish\Serilog.Extensions.Hosting.dll
+D:\ThucTap\bank-registration-system\message-service\publish\Serilog.Extensions.Logging.dll
+D:\ThucTap\bank-registration-system\message-service\publish\Serilog.Formatting.Compact.dll
+D:\ThucTap\bank-registration-system\message-service\publish\Serilog.Settings.Configuration.dll
+D:\ThucTap\bank-registration-system\message-service\publish\Serilog.Sinks.Console.dll
+D:\ThucTap\bank-registration-system\message-service\publish\Serilog.Sinks.Debug.dll
+D:\ThucTap\bank-registration-system\message-service\publish\Serilog.Sinks.File.dll

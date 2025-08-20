@@ -1,0 +1,199 @@
+services:
+  user-service:
+    build:
+      context: ./user-service
+      dockerfile: Dockerfile
+    depends_on:
+      mysql:
+        condition: service_healthy
+      rabbitmq:
+        condition: service_healthy
+    networks:
+      - banknet
+    ports:
+      - "5000:8080"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+
+  transfer-service:
+    build:
+      context: ./transfer-service
+      dockerfile: Dockerfile
+    depends_on:
+      mysql:
+        condition: service_healthy
+    networks:
+      - banknet
+    ports:
+      - "5055:8080"
+      - "5060:8081"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings__BankDb=server=mysql;user=root;password=root;database=bank_users
+
+  otp-service:
+    build: ./otp-service
+    ports:
+      - "5001:8080"
+    networks:
+      - banknet
+    depends_on:
+      redis:
+        condition: service_healthy
+      rabbitmq:
+        condition: service_healthy
+    environment:
+      - REDIS_HOST=redis
+
+  email-service:
+    build: ./email-service
+    ports:
+      - "5002:5002"
+    networks:
+      - banknet
+
+  message-service:
+    build: ./message-service
+    networks:
+      - banknet
+    volumes:
+      - ./logs/message-service:/app/logs
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+      mysql:
+        condition: service_healthy
+    environment:
+      - TWILIO_ACCOUNT_SID=YOUR_TWILIO_ACCOUNT_SID
+      - TWILIO_AUTH_TOKEN=YOUR_TWILIO_AUTH_TOKEN
+      - TWILIO_PHONE_NUMBER=YOUR_TWILIO_PHONE_NUMBER
+    deploy:
+      resources:
+        limits:
+          cpus: "0.5"
+          memory: 512M
+
+  rabbitmq:
+    image: rabbitmq:3-management
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    networks:
+      - banknet
+    healthcheck:
+      test: ["CMD", "rabbitmqctl", "status"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+
+  mysql:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: bank_users
+    ports:
+      - "3306:3306"
+    # Dùng volume Docker thay vì bind mount để tránh lỗi permission
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./database/init.sql:/docker-entrypoint-initdb.d/init.sql
+    networks:
+      - banknet
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+
+  frontend-customer:
+    build:
+      context: ./frontend
+      args:
+        BUILD_DIR: customer
+    ports:
+      - "3000:80"
+    networks:
+      - banknet
+    depends_on:
+      - otp-service
+
+  frontend-staff:
+    build:
+      context: ./frontend
+      args:
+        BUILD_DIR: staff
+    ports:
+      - "3001:80"
+    networks:
+      - banknet
+    depends_on:
+      - otp-service
+
+  redis:
+    image: redis:alpine
+    ports:
+      - "6379:6379"
+    networks:
+      - banknet
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+
+  bonita:
+    image: bonita:2024.3-u0
+    ports:
+      - "8080:8080"
+    environment:
+      - DB_VENDOR=postgres
+      - DB_HOST=postgres
+      - DB_PORT=5432
+      - DB_NAME=businessdb
+      - DB_USER=bonita
+      - DB_PASS=bonita
+      - BIZ_DB_USER=bonita
+      - BIZ_DB_PASS=bonita
+    volumes:
+      - bonita_data:/opt/bonita
+    depends_on:
+      - postgres
+    networks:
+      - banknet
+
+  gateway-api:
+    build:
+      context: ./gateway-api
+    ports:
+      - "5050:5050"
+      - "6000:6000"
+      - "5053:5053"
+    networks:
+      - banknet
+    depends_on:
+      - bonita
+
+  postgres:
+    image: postgres:15
+    environment:
+      - POSTGRES_DB=businessdb
+      - POSTGRES_USER=bonita
+      - POSTGRES_PASSWORD=bonita
+    command: postgres -c max_prepared_transactions=100
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - banknet
+
+volumes:
+  bonita_data:
+  postgres_data:
+  mysql_data:
+    # volume mới cho MySQL
+
+networks:
+  banknet:
+    driver: bridge

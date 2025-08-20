@@ -1,0 +1,332 @@
+2025-07-18 00:45:37.631 +00:00 [INF] Starting Message Service...
+2025-07-18 00:45:45.791 +00:00 [FTL] Application terminated unexpectedly.
+RabbitMQ.Client.Exceptions.BrokerUnreachableException: None of the specified endpoints were reachable
+ ---> System.AggregateException: One or more errors occurred. (Connection failed)
+ ---> RabbitMQ.Client.Exceptions.ConnectFailureException: Connection failed
+ ---> System.Net.Sockets.SocketException (00000005, 0xFFFDFFFF): Name or service not known
+   at System.Net.Dns.GetHostEntryOrAddressesCore(String hostName, Boolean justAddresses, AddressFamily addressFamily, Nullable`1 startingTimestamp)
+   at System.Net.Dns.<>c.<GetHostEntryOrAddressesCoreAsync>b__33_0(Object s, Int64 startingTimestamp)
+   at System.Net.Dns.<>c__DisplayClass39_0`1.<RunAsync>b__0(Task <p0>, Object <p1>)
+   at System.Threading.Tasks.ContinuationResultTaskFromTask`1.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at RabbitMQ.Client.Impl.TcpClientAdapter.ConnectAsync(String host, Int32 port)
+   at RabbitMQ.Client.Impl.TaskExtensions.TimeoutAfter(Task task, TimeSpan timeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectOrFail(ITcpClient socket, AmqpTcpEndpoint endpoint, TimeSpan timeout)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectOrFail(ITcpClient socket, AmqpTcpEndpoint endpoint, TimeSpan timeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectUsingAddressFamily(AmqpTcpEndpoint endpoint, Func`2 socketFactory, TimeSpan timeout, AddressFamily family)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectUsingIPv4(AmqpTcpEndpoint endpoint, Func`2 socketFactory, TimeSpan timeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler..ctor(AmqpTcpEndpoint endpoint, Func`2 socketFactory, TimeSpan connectionTimeout, TimeSpan readTimeout, TimeSpan writeTimeout)
+   at RabbitMQ.Client.Framing.Impl.IProtocolExtensions.CreateFrameHandler(IProtocol protocol, AmqpTcpEndpoint endpoint, ArrayPool`1 pool, Func`2 socketFactory, TimeSpan connectionTimeout, TimeSpan readTimeout, TimeSpan writeTimeout)
+   at RabbitMQ.Client.ConnectionFactory.CreateFrameHandler(AmqpTcpEndpoint endpoint)
+   at RabbitMQ.Client.EndpointResolverExtensions.SelectOne[T](IEndpointResolver resolver, Func`2 selector)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.EndpointResolverExtensions.SelectOne[T](IEndpointResolver resolver, Func`2 selector)
+   at RabbitMQ.Client.Framing.Impl.AutorecoveringConnection.Init(IEndpointResolver endpoints)
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IEndpointResolver endpointResolver, String clientProvidedName)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IEndpointResolver endpointResolver, String clientProvidedName)
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(String clientProvidedName)
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection()
+   at MessageService.MessageConsumer.Start() in /src/Consumer/MessageConsumer.cs:line 20
+   at Program.Main(String[] args) in /src/Program.cs:line 23
+2025-07-18 00:47:54.630 +00:00 [INF] Starting Message Service...
+2025-07-18 00:48:02.757 +00:00 [FTL] Application terminated unexpectedly.
+RabbitMQ.Client.Exceptions.BrokerUnreachableException: None of the specified endpoints were reachable
+ ---> System.AggregateException: One or more errors occurred. (Connection failed)
+ ---> RabbitMQ.Client.Exceptions.ConnectFailureException: Connection failed
+ ---> System.Net.Sockets.SocketException (00000005, 0xFFFDFFFF): Name or service not known
+   at System.Net.Dns.GetHostEntryOrAddressesCore(String hostName, Boolean justAddresses, AddressFamily addressFamily, Nullable`1 startingTimestamp)
+   at System.Net.Dns.<>c.<GetHostEntryOrAddressesCoreAsync>b__33_0(Object s, Int64 startingTimestamp)
+   at System.Net.Dns.<>c__DisplayClass39_0`1.<RunAsync>b__0(Task <p0>, Object <p1>)
+   at System.Threading.Tasks.ContinuationResultTaskFromTask`1.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at RabbitMQ.Client.Impl.TcpClientAdapter.ConnectAsync(String host, Int32 port)
+   at RabbitMQ.Client.Impl.TaskExtensions.TimeoutAfter(Task task, TimeSpan timeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectOrFail(ITcpClient socket, AmqpTcpEndpoint endpoint, TimeSpan timeout)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectOrFail(ITcpClient socket, AmqpTcpEndpoint endpoint, TimeSpan timeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectUsingAddressFamily(AmqpTcpEndpoint endpoint, Func`2 socketFactory, TimeSpan timeout, AddressFamily family)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectUsingIPv4(AmqpTcpEndpoint endpoint, Func`2 socketFactory, TimeSpan timeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler..ctor(AmqpTcpEndpoint endpoint, Func`2 socketFactory, TimeSpan connectionTimeout, TimeSpan readTimeout, TimeSpan writeTimeout)
+   at RabbitMQ.Client.Framing.Impl.IProtocolExtensions.CreateFrameHandler(IProtocol protocol, AmqpTcpEndpoint endpoint, ArrayPool`1 pool, Func`2 socketFactory, TimeSpan connectionTimeout, TimeSpan readTimeout, TimeSpan writeTimeout)
+   at RabbitMQ.Client.ConnectionFactory.CreateFrameHandler(AmqpTcpEndpoint endpoint)
+   at RabbitMQ.Client.EndpointResolverExtensions.SelectOne[T](IEndpointResolver resolver, Func`2 selector)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.EndpointResolverExtensions.SelectOne[T](IEndpointResolver resolver, Func`2 selector)
+   at RabbitMQ.Client.Framing.Impl.AutorecoveringConnection.Init(IEndpointResolver endpoints)
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IEndpointResolver endpointResolver, String clientProvidedName)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IEndpointResolver endpointResolver, String clientProvidedName)
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(String clientProvidedName)
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection()
+   at MessageService.MessageConsumer.Start() in /src/Consumer/MessageConsumer.cs:line 20
+   at Program.Main(String[] args) in /src/Program.cs:line 23
+2025-07-18 00:55:18.971 +00:00 [INF] Starting Message Service...
+2025-07-18 00:55:19.116 +00:00 [FTL] Application terminated unexpectedly.
+RabbitMQ.Client.Exceptions.BrokerUnreachableException: None of the specified endpoints were reachable
+ ---> System.AggregateException: One or more errors occurred. (Connection failed)
+ ---> RabbitMQ.Client.Exceptions.ConnectFailureException: Connection failed
+ ---> System.Net.Sockets.SocketException (111): Connection refused
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Threading.Tasks.ValueTask.ValueTaskSourceAsTask.<>c.<.cctor>b__4_0(Object state)
+--- End of stack trace from previous location ---
+   at RabbitMQ.Client.Impl.TcpClientAdapter.ConnectAsync(String host, Int32 port)
+   at RabbitMQ.Client.Impl.TaskExtensions.TimeoutAfter(Task task, TimeSpan timeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectOrFail(ITcpClient socket, AmqpTcpEndpoint endpoint, TimeSpan timeout)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectOrFail(ITcpClient socket, AmqpTcpEndpoint endpoint, TimeSpan timeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectUsingAddressFamily(AmqpTcpEndpoint endpoint, Func`2 socketFactory, TimeSpan timeout, AddressFamily family)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectUsingIPv4(AmqpTcpEndpoint endpoint, Func`2 socketFactory, TimeSpan timeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler..ctor(AmqpTcpEndpoint endpoint, Func`2 socketFactory, TimeSpan connectionTimeout, TimeSpan readTimeout, TimeSpan writeTimeout)
+   at RabbitMQ.Client.Framing.Impl.IProtocolExtensions.CreateFrameHandler(IProtocol protocol, AmqpTcpEndpoint endpoint, ArrayPool`1 pool, Func`2 socketFactory, TimeSpan connectionTimeout, TimeSpan readTimeout, TimeSpan writeTimeout)
+   at RabbitMQ.Client.ConnectionFactory.CreateFrameHandler(AmqpTcpEndpoint endpoint)
+   at RabbitMQ.Client.EndpointResolverExtensions.SelectOne[T](IEndpointResolver resolver, Func`2 selector)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.EndpointResolverExtensions.SelectOne[T](IEndpointResolver resolver, Func`2 selector)
+   at RabbitMQ.Client.Framing.Impl.AutorecoveringConnection.Init(IEndpointResolver endpoints)
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IEndpointResolver endpointResolver, String clientProvidedName)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IEndpointResolver endpointResolver, String clientProvidedName)
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(String clientProvidedName)
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection()
+   at MessageService.MessageConsumer.Start() in /src/Consumer/MessageConsumer.cs:line 20
+   at Program.Main(String[] args) in /src/Program.cs:line 23
+2025-07-18 01:05:39.335 +00:00 [INF] Starting Message Service...
+2025-07-18 01:05:39.477 +00:00 [FTL] Application terminated unexpectedly.
+RabbitMQ.Client.Exceptions.BrokerUnreachableException: None of the specified endpoints were reachable
+ ---> System.AggregateException: One or more errors occurred. (Connection failed)
+ ---> RabbitMQ.Client.Exceptions.ConnectFailureException: Connection failed
+ ---> System.Net.Sockets.SocketException (111): Connection refused
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Threading.Tasks.ValueTask.ValueTaskSourceAsTask.<>c.<.cctor>b__4_0(Object state)
+--- End of stack trace from previous location ---
+   at RabbitMQ.Client.Impl.TcpClientAdapter.ConnectAsync(String host, Int32 port)
+   at RabbitMQ.Client.Impl.TaskExtensions.TimeoutAfter(Task task, TimeSpan timeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectOrFail(ITcpClient socket, AmqpTcpEndpoint endpoint, TimeSpan timeout)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectOrFail(ITcpClient socket, AmqpTcpEndpoint endpoint, TimeSpan timeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectUsingAddressFamily(AmqpTcpEndpoint endpoint, Func`2 socketFactory, TimeSpan timeout, AddressFamily family)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectUsingIPv4(AmqpTcpEndpoint endpoint, Func`2 socketFactory, TimeSpan timeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler..ctor(AmqpTcpEndpoint endpoint, Func`2 socketFactory, TimeSpan connectionTimeout, TimeSpan readTimeout, TimeSpan writeTimeout)
+   at RabbitMQ.Client.Framing.Impl.IProtocolExtensions.CreateFrameHandler(IProtocol protocol, AmqpTcpEndpoint endpoint, ArrayPool`1 pool, Func`2 socketFactory, TimeSpan connectionTimeout, TimeSpan readTimeout, TimeSpan writeTimeout)
+   at RabbitMQ.Client.ConnectionFactory.CreateFrameHandler(AmqpTcpEndpoint endpoint)
+   at RabbitMQ.Client.EndpointResolverExtensions.SelectOne[T](IEndpointResolver resolver, Func`2 selector)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.EndpointResolverExtensions.SelectOne[T](IEndpointResolver resolver, Func`2 selector)
+   at RabbitMQ.Client.Framing.Impl.AutorecoveringConnection.Init(IEndpointResolver endpoints)
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IEndpointResolver endpointResolver, String clientProvidedName)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IEndpointResolver endpointResolver, String clientProvidedName)
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(String clientProvidedName)
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection()
+   at MessageService.MessageConsumer.Start() in /src/Consumer/MessageConsumer.cs:line 20
+   at Program.Main(String[] args) in /src/Program.cs:line 23
+2025-07-18 01:06:00.792 +00:00 [INF] Starting Message Service...
+2025-07-18 01:08:58.438 +00:00 [INF] Starting Message Service...
+2025-07-18 01:08:58.606 +00:00 [FTL] Application terminated unexpectedly.
+RabbitMQ.Client.Exceptions.BrokerUnreachableException: None of the specified endpoints were reachable
+ ---> System.AggregateException: One or more errors occurred. (Connection failed)
+ ---> RabbitMQ.Client.Exceptions.ConnectFailureException: Connection failed
+ ---> System.Net.Sockets.SocketException (111): Connection refused
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Threading.Tasks.ValueTask.ValueTaskSourceAsTask.<>c.<.cctor>b__4_0(Object state)
+--- End of stack trace from previous location ---
+   at RabbitMQ.Client.Impl.TcpClientAdapter.ConnectAsync(String host, Int32 port)
+   at RabbitMQ.Client.Impl.TaskExtensions.TimeoutAfter(Task task, TimeSpan timeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectOrFail(ITcpClient socket, AmqpTcpEndpoint endpoint, TimeSpan timeout)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectOrFail(ITcpClient socket, AmqpTcpEndpoint endpoint, TimeSpan timeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectUsingAddressFamily(AmqpTcpEndpoint endpoint, Func`2 socketFactory, TimeSpan timeout, AddressFamily family)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectUsingIPv4(AmqpTcpEndpoint endpoint, Func`2 socketFactory, TimeSpan timeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler..ctor(AmqpTcpEndpoint endpoint, Func`2 socketFactory, TimeSpan connectionTimeout, TimeSpan readTimeout, TimeSpan writeTimeout)
+   at RabbitMQ.Client.Framing.Impl.IProtocolExtensions.CreateFrameHandler(IProtocol protocol, AmqpTcpEndpoint endpoint, ArrayPool`1 pool, Func`2 socketFactory, TimeSpan connectionTimeout, TimeSpan readTimeout, TimeSpan writeTimeout)
+   at RabbitMQ.Client.ConnectionFactory.CreateFrameHandler(AmqpTcpEndpoint endpoint)
+   at RabbitMQ.Client.EndpointResolverExtensions.SelectOne[T](IEndpointResolver resolver, Func`2 selector)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.EndpointResolverExtensions.SelectOne[T](IEndpointResolver resolver, Func`2 selector)
+   at RabbitMQ.Client.Framing.Impl.AutorecoveringConnection.Init(IEndpointResolver endpoints)
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IEndpointResolver endpointResolver, String clientProvidedName)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IEndpointResolver endpointResolver, String clientProvidedName)
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(String clientProvidedName)
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection()
+   at MessageService.MessageConsumer.Start() in /src/Consumer/MessageConsumer.cs:line 20
+   at Program.Main(String[] args) in /src/Program.cs:line 23
+2025-07-18 01:10:28.718 +00:00 [INF] Starting Message Service...
+2025-07-18 01:20:14.336 +00:00 [INF] Logger initialized
+2025-07-18 01:20:14.361 +00:00 [INF] Starting Message Service...
+2025-07-18 01:20:14.361 +00:00 [INF] Starting MessageConsumer...
+2025-07-18 01:20:15.460 +00:00 [INF] Connected to RabbitMQ
+2025-07-18 01:20:15.469 +00:00 [INF] Message service is running...
+2025-07-18 01:25:19.295 +00:00 [INF] Logger initialized
+2025-07-18 01:25:19.321 +00:00 [INF] Starting Message Service...
+2025-07-18 01:25:19.322 +00:00 [INF] Starting MessageConsumer...
+2025-07-18 01:25:20.397 +00:00 [INF] Connected to RabbitMQ
+2025-07-18 01:25:20.401 +00:00 [INF] Message service is running...
+2025-07-18 01:32:06.011 +00:00 [INF] Logger initialized
+2025-07-18 01:32:06.081 +00:00 [INF] Starting Message Service...
+2025-07-18 01:32:06.081 +00:00 [INF] Starting MessageConsumer...
+2025-07-18 01:32:07.131 +00:00 [INF] Connected to RabbitMQ
+2025-07-18 01:32:07.135 +00:00 [INF] Message service is running...
+2025-07-18 01:45:26.696 +00:00 [INF] Logger initialized
+2025-07-18 01:45:26.771 +00:00 [INF] Starting Message Service...
+2025-07-18 01:45:26.772 +00:00 [INF] Starting MessageConsumer...
+2025-07-18 01:45:27.848 +00:00 [INF] Connected to RabbitMQ
+2025-07-18 01:45:27.853 +00:00 [INF] Message service is running...
+2025-07-18 01:49:55.402 +00:00 [INF] Logger initialized
+2025-07-18 01:49:55.480 +00:00 [INF] Starting Message Service...
+2025-07-18 01:49:55.481 +00:00 [INF] Starting MessageConsumer...
+2025-07-18 01:49:55.580 +00:00 [INF] Connected to RabbitMQ successfully
+2025-07-18 01:49:55.588 +00:00 [INF] Message service is running...
+2025-07-18 01:59:41.496 +00:00 [INF] Logger initialized
+2025-07-18 01:59:41.571 +00:00 [INF] Starting Message Service...
+2025-07-18 01:59:41.571 +00:00 [INF] Starting MessageConsumer...
+2025-07-18 01:59:41.686 +00:00 [INF] Connected to RabbitMQ successfully
+2025-07-18 01:59:41.697 +00:00 [INF] Message service is running...
+2025-07-18 02:10:30.570 +00:00 [INF] Logger initialized
+2025-07-18 02:10:30.648 +00:00 [INF] Starting Message Service...
+2025-07-18 02:10:30.648 +00:00 [INF] Starting MessageConsumer...
+2025-07-18 02:10:30.756 +00:00 [INF] Connected to RabbitMQ successfully
+2025-07-18 02:10:30.766 +00:00 [INF] Message service is running...
+2025-07-18 02:12:26.714 +00:00 [INF] Logger initialized
+2025-07-18 02:12:26.742 +00:00 [INF] Starting Message Service...
+2025-07-18 02:12:26.743 +00:00 [INF] Starting MessageConsumer...
+2025-07-18 02:12:26.894 +00:00 [INF] Connected to RabbitMQ successfully
+2025-07-18 02:12:26.903 +00:00 [INF] Message service is running...
+2025-07-18 02:23:18.904 +00:00 [INF] Logger initialized
+2025-07-18 02:23:18.983 +00:00 [INF] Starting Message Service...
+2025-07-18 02:23:18.983 +00:00 [INF] Starting MessageConsumer...
+2025-07-18 02:23:19.086 +00:00 [INF] Connected to RabbitMQ successfully
+2025-07-18 02:23:19.097 +00:00 [INF] Message service is running...
+2025-07-18 02:31:53.278 +00:00 [INF] [Consumer] Received: Phone=0706608882, Email=xuancuong@ittc.edu.vn, Method=email, OTP=631324
+2025-07-18 02:31:56.394 +00:00 [INF] Đã gửi email đến: xuancuong@ittc.edu.vn
+2025-07-18 02:39:03.441 +00:00 [INF] [Consumer] Received: Phone=0706608882, Email=xuancuong@ittc.edu.vn, Method=email, OTP=134511
+2025-07-18 02:39:06.670 +00:00 [INF] Đã gửi email đến: xuancuong@ittc.edu.vn
+2025-07-18 02:48:19.792 +00:00 [INF] Logger initialized
+2025-07-18 02:48:19.870 +00:00 [INF] Starting Message Service...
+2025-07-18 02:48:19.870 +00:00 [INF] Starting MessageConsumer...
+2025-07-18 02:48:19.981 +00:00 [INF] Connected to RabbitMQ successfully
+2025-07-18 02:48:19.990 +00:00 [INF] Message service is running...
+2025-07-18 02:54:15.507 +00:00 [INF] [Consumer] Received: Phone=0706608882, Email=cuongvnabc@gmail.com, Method=email, OTP=706714
+2025-07-18 02:54:19.680 +00:00 [INF] Đã gửi email đến: cuongvnabc@gmail.com
+2025-07-18 03:01:30.324 +00:00 [INF] [Consumer] Received: Phone=0706608882, Email=bluestar140304@gmail.com, Method=email, OTP=255751
+2025-07-18 03:01:34.529 +00:00 [INF] Đã gửi email đến: bluestar140304@gmail.com
+2025-07-18 03:04:27.543 +00:00 [INF] [Consumer] Received: Phone=0706608882, Email=cuongvnabc@gmail.com, Method=email, OTP=392332
+2025-07-18 03:04:30.923 +00:00 [INF] Đã gửi email đến: cuongvnabc@gmail.com
+2025-07-18 03:06:04.239 +00:00 [INF] [Consumer] Received: Phone=0706608882, Email=xuancuong@ittc.edu.vn, Method=email, OTP=574641
+2025-07-18 03:06:06.572 +00:00 [INF] Đã gửi email đến: xuancuong@ittc.edu.vn
+2025-07-18 03:11:32.660 +00:00 [INF] Logger initialized
+2025-07-18 03:11:32.748 +00:00 [INF] Starting Message Service...
+2025-07-18 03:11:32.748 +00:00 [INF] Starting MessageConsumer...
+2025-07-18 03:11:32.856 +00:00 [INF] Connected to RabbitMQ successfully
+2025-07-18 03:11:32.867 +00:00 [INF] Message service is running...
+2025-07-18 03:11:51.141 +00:00 [INF] [Consumer] Received: Phone=0706608882, Email=xuancuong@ittc.edu.vn, Method=email, OTP=102731
+2025-07-18 03:11:54.841 +00:00 [INF] Đã gửi email đến: xuancuong@ittc.edu.vn
+2025-07-18 03:18:05.539 +00:00 [INF] Logger initialized
+2025-07-18 03:18:05.567 +00:00 [INF] Starting Message Service...
+2025-07-18 03:18:05.568 +00:00 [INF] Starting MessageConsumer...
+2025-07-18 03:18:05.659 +00:00 [INF] Connected to RabbitMQ successfully
+2025-07-18 03:18:05.722 +00:00 [INF] Message service is running...
+2025-07-18 03:18:40.905 +00:00 [INF] [Consumer] Received: Phone=0706608882, Email=xuancuong@ittc.edu.vn, Method=email, OTP=990489
+2025-07-18 03:18:44.634 +00:00 [INF] Đã gửi email đến: xuancuong@ittc.edu.vn
+2025-07-18 03:22:16.651 +00:00 [INF] Logger initialized
+2025-07-18 03:22:16.679 +00:00 [INF] Starting Message Service...
+2025-07-18 03:22:16.679 +00:00 [INF] Starting MessageConsumer...
+2025-07-18 03:22:16.835 +00:00 [INF] Connected to RabbitMQ successfully
+2025-07-18 03:22:16.844 +00:00 [INF] Message service is running...
+2025-07-18 03:22:50.075 +00:00 [INF] [Consumer] Received: Phone=0706608882, Email=xuancuong@ittc.edu.vn, Method=email, OTP=131283
+2025-07-18 03:22:53.745 +00:00 [INF] Đã gửi email đến: xuancuong@ittc.edu.vn
+2025-07-18 06:16:59.728 +00:00 [INF] Logger initialized
+2025-07-18 06:16:59.816 +00:00 [INF] Starting Message Service...
+2025-07-18 06:16:59.817 +00:00 [INF] Starting MessageConsumer...
+2025-07-18 06:16:59.915 +00:00 [INF] Connected to RabbitMQ successfully
+2025-07-18 06:16:59.925 +00:00 [INF] Message service is running...
+2025-07-18 06:46:23.760 +00:00 [INF] Logger initialized
+2025-07-18 06:46:23.799 +00:00 [INF] Starting Message Service...
+2025-07-18 06:46:23.800 +00:00 [INF] Starting MessageConsumer...
+2025-07-18 06:46:23.960 +00:00 [INF] Connected to RabbitMQ successfully
+2025-07-18 06:46:23.973 +00:00 [INF] Message service is running...
+2025-07-18 06:53:34.035 +00:00 [INF] Logger initialized
+2025-07-18 06:53:34.140 +00:00 [INF] Starting Message Service...
+2025-07-18 06:53:34.141 +00:00 [INF] Starting MessageConsumer...
+2025-07-18 06:53:34.348 +00:00 [INF] Connected to RabbitMQ successfully
+2025-07-18 06:53:34.365 +00:00 [INF] Message service is running...
+2025-07-18 07:00:30.080 +00:00 [INF] Logger initialized
+2025-07-18 07:00:30.157 +00:00 [INF] Starting Message Service...
+2025-07-18 07:00:30.158 +00:00 [INF] Starting MessageConsumer...
+2025-07-18 07:00:30.276 +00:00 [INF] Connected to RabbitMQ successfully
+2025-07-18 07:00:30.289 +00:00 [INF] Message service is running...
+2025-07-18 07:03:23.762 +00:00 [INF] Logger initialized
+2025-07-18 07:03:23.847 +00:00 [INF] Starting Message Service...
+2025-07-18 07:03:23.847 +00:00 [INF] Starting MessageConsumer...
+2025-07-18 07:03:24.020 +00:00 [INF] Connected to RabbitMQ successfully
+2025-07-18 07:03:24.029 +00:00 [INF] Message service is running...
+2025-07-18 07:18:35.074 +00:00 [INF] Logger initialized
+2025-07-18 07:18:35.104 +00:00 [INF] Starting Message Service...
+2025-07-18 07:18:35.104 +00:00 [INF] Starting MessageConsumer...
+2025-07-18 07:18:35.208 +00:00 [INF] Connected to RabbitMQ successfully
+2025-07-18 07:18:35.262 +00:00 [INF] Message service is running...
+2025-07-18 07:19:28.723 +00:00 [INF] [Consumer] Received: Phone=0706608882, Email=xuancuong@ittc.edu.vn, Method=email, OTP=336230
+2025-07-18 07:19:32.703 +00:00 [INF] Đã gửi email đến: xuancuong@ittc.edu.vn
+2025-07-18 07:20:48.058 +00:00 [INF] [Consumer] Received: Phone=0706608882, Email=xuancuong@ittc.edu.vn, Method=email, OTP=461978
+2025-07-18 07:20:51.974 +00:00 [INF] Đã gửi email đến: xuancuong@ittc.edu.vn
+2025-07-18 07:26:47.646 +00:00 [INF] Logger initialized
+2025-07-18 07:26:47.723 +00:00 [INF] Starting Message Service...
+2025-07-18 07:26:47.723 +00:00 [INF] Starting MessageConsumer...
+2025-07-18 07:26:47.830 +00:00 [INF] Connected to RabbitMQ successfully
+2025-07-18 07:26:47.841 +00:00 [INF] Message service is running...
+2025-07-18 07:28:10.794 +00:00 [INF] [Consumer] Received: Phone=0706608882, Email=xuancuong@ittc.edu.vn, Method=email, OTP=145022
+2025-07-18 07:28:14.350 +00:00 [INF] Đã gửi email đến: xuancuong@ittc.edu.vn
+2025-07-18 07:31:48.211 +00:00 [INF] Logger initialized
+2025-07-18 07:31:48.249 +00:00 [INF] Starting Message Service...
+2025-07-18 07:31:48.249 +00:00 [INF] Starting MessageConsumer...
+2025-07-18 07:31:48.405 +00:00 [INF] Connected to RabbitMQ successfully
+2025-07-18 07:31:48.416 +00:00 [INF] Message service is running...
+2025-07-18 07:33:06.952 +00:00 [INF] [Consumer] Received: Phone=0706608882, Email=xuancuong@ittc.edu.vn, Method=email, OTP=500681
+2025-07-18 07:33:09.860 +00:00 [INF] Đã gửi email đến: xuancuong@ittc.edu.vn
+2025-07-18 09:14:13.443 +00:00 [INF] Logger initialized
+2025-07-18 09:14:13.522 +00:00 [INF] Starting Message Service...
+2025-07-18 09:14:13.522 +00:00 [INF] Starting MessageConsumer...
+2025-07-18 09:14:13.626 +00:00 [INF] Connected to RabbitMQ successfully
+2025-07-18 09:14:13.632 +00:00 [INF] Message service is running...
+2025-07-18 09:23:07.687 +00:00 [INF] Logger initialized
+2025-07-18 09:23:07.720 +00:00 [INF] Starting Message Service...
+2025-07-18 09:23:07.722 +00:00 [INF] Starting MessageConsumer...
+2025-07-18 09:23:07.826 +00:00 [INF] Connected to RabbitMQ successfully
+2025-07-18 09:23:07.841 +00:00 [INF] Message service is running...
+2025-07-18 09:25:18.737 +00:00 [INF] Logger initialized
+2025-07-18 09:25:18.816 +00:00 [INF] Starting Message Service...
+2025-07-18 09:25:18.817 +00:00 [INF] Starting MessageConsumer...
+2025-07-18 09:25:18.939 +00:00 [INF] Connected to RabbitMQ successfully
+2025-07-18 09:25:18.944 +00:00 [INF] Message service is running...
+2025-07-18 09:26:51.756 +00:00 [INF] [Consumer] Received: Phone=0706608882, Email=xuancuong@ittc.edu.vn, Method=email, OTP=749874
+2025-07-18 09:26:56.372 +00:00 [INF] Đã gửi email đến: xuancuong@ittc.edu.vn
+2025-07-18 09:28:08.386 +00:00 [INF] Logger initialized
+2025-07-18 09:28:08.422 +00:00 [INF] Starting Message Service...
+2025-07-18 09:28:08.423 +00:00 [INF] Starting MessageConsumer...
+2025-07-18 09:28:08.579 +00:00 [INF] Connected to RabbitMQ successfully
+2025-07-18 09:28:08.585 +00:00 [INF] Message service is running...
+2025-07-18 09:29:05.560 +00:00 [INF] [Consumer] Received: Phone=0706608882, Email=xuancuong@ittc.edu.vn, Method=email, OTP=263748
+2025-07-18 09:29:08.779 +00:00 [INF] Đã gửi email đến: xuancuong@ittc.edu.vn
+2025-07-18 09:33:15.251 +00:00 [INF] Logger initialized
+2025-07-18 09:33:15.332 +00:00 [INF] Starting Message Service...
+2025-07-18 09:33:15.333 +00:00 [INF] Starting MessageConsumer...
+2025-07-18 09:33:15.438 +00:00 [INF] Connected to RabbitMQ successfully
+2025-07-18 09:33:15.444 +00:00 [INF] Message service is running...
+2025-07-18 09:41:01.762 +00:00 [INF] Logger initialized
+2025-07-18 09:41:01.837 +00:00 [INF] Starting Message Service...
+2025-07-18 09:41:01.839 +00:00 [INF] Starting MessageConsumer...
+2025-07-18 09:41:01.940 +00:00 [INF] Connected to RabbitMQ successfully
+2025-07-18 09:41:01.945 +00:00 [INF] Message service is running...

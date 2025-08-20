@@ -1,0 +1,17 @@
+version: "3.8"
+#khi bị lỗi không kết nối được với bonita thì có thể do bonita chưa khởi động xong, thì chạy file nay để khởi động lại trước rồi mới chạy docker-compose up
+#docker compose -f docker-compose.bonita.yml up  docker compose -f docker-compose.bonita.yml down
+services:
+
+  postgres:
+    image: postgres:15
+    environment:
+      - POSTGRES_DB=businessdb
+      - POSTGRES_USER=bonita
+      - POSTGRES_PASSWORD=bonita
+    volumes:
+      - postgres_data:/var/lib/postgresql/data # chứa dữ liệu người dùng, tổ chức, quy trình...
+
+volumes:
+  bonita_data:
+  postgres_data:

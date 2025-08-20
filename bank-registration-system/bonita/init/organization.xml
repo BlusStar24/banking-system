@@ -1,0 +1,38 @@
+<organization>
+  <users>
+    <user userName="walter.bates">
+      <password encrypted="true">LcTkpvvquKf4KO+prsfXrQ==</password>
+      <firstName>Walter</firstName>
+      <lastName>Bates</lastName>
+      <jobTitle>Human resources benefits</jobTitle>
+      <manager>helen.kelly</manager>
+      <enabled>true</enabled>
+      <professionalData>
+        <email>walter.bates@acme.com</email>
+        <phoneNumber>484-302-5000</phoneNumber>
+      </professionalData>
+    </user>
+  </users>
+
+  <roles>
+    <role name="Member" />
+  </roles>
+
+  <groups>
+    <group name="Human Resources" />
+  </groups>
+
+  <memberships>
+    <!-- Gán walter.bates vào group + role -->
+    <membership user="walter.bates" group="Human Resources" role="Member" />
+  </memberships>
+
+  <profiles>
+    <profile name="User">
+      <profileMember user="walter.bates" />
+    </profile>
+    <profile name="Administrator">
+      <profileMember user="walter.bates" />
+    </profile>
+  </profiles>
+</organization>

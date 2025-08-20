@@ -1,1 +1,2 @@
 bank-registration-system/database/data/*.sock
+node_modules/
