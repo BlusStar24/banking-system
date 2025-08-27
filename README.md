@@ -6,13 +6,13 @@ Hệ thống ngân hàng mô phỏng bao gồm cả backend và frontend, hỗ t
 
 ## 🧩 Chức năng chính
 
-- ✅ Đăng ký tài khoản ngân hàng
-- ✅ Xác thực mã PIN và OTP qua email
-- ✅ Duyệt tài khoản bởi nhân viên
-- ✅ Tạo số tài khoản, sinh mã giao dịch
-- ✅ Chuyển khoản nội bộ và liên ngân hàng
-- ✅ Theo dõi và xử lý trạng thái giao dịch
-- ✅ Giao diện web khách hàng + nhân viên
+- Đăng ký tài khoản ngân hàng
+- Xác thực mã PIN và OTP qua email
+- Duyệt tài khoản bởi nhân viên
+- Tạo số tài khoản, sinh mã giao dịch
+- Chuyển khoản nội bộ và liên ngân hàng
+- Theo dõi và xử lý trạng thái giao dịch
+- Giao diện web khách hàng + nhân viên
 
 ---
 
@@ -52,7 +52,7 @@ Docker + Docker Compose
 
 Cổng mặc định: 5055, 5000, 5050, 8080, 8081, 3000
 
-🧪 Tài khoản mẫu
+Tài khoản mẫu
 Vai trò	SĐT (username)	Mật khẩu
 Khách hàng	091200004444	123456
 Nhân viên	0909123456	123456
@@ -60,7 +60,7 @@ Nhân viên	0909123456	123456
 👨‍💻 Tác giả
 Nguyễn Xuân Cường – GitHub @BlusStar24
 
-Trường: [Tên trường bạn học]
+Trường: Đại học Công Thương
 
 📌 Ghi chú
 Tích hợp xác thực JWT + lưu trạng thái vào Redis.
