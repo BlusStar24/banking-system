@@ -82,14 +82,4 @@ Chuyển khoản thành công
 
 ---
 
-### ✅ Gợi ý tiếp theo:
-Bạn nên lưu file này thành:
 
-ThucTap/README.md
-
-Rồi commit:
-
-```bash
-git add README.md
-git commit -m "📝 Thêm README mô tả project"
-git push
